@@ -7,11 +7,12 @@ import { notFound } from "next/navigation";
 import React from "react";
 
 type ServiceProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export function generateMetadata({ params }: ServiceProps): Metadata {
-  const serviceInfo = services.find((service) => service.link === params.slug);
+export async function generateMetadata({ params }: ServiceProps): Promise<Metadata> {
+  const { slug } = await params;
+  const serviceInfo = services.find((service) => service.link === slug);
   if (!serviceInfo) {
     return notFound();
   }
@@ -20,12 +21,12 @@ export function generateMetadata({ params }: ServiceProps): Metadata {
     title: `${service} | AirStream HVAC & Refrigeration Services in Kenya`,
     description: `AirStream provides expert ${service.toLowerCase()} services in Kenya, including installation, repair, maintenance, and genuine spare parts.`,
     alternates: {
-      canonical: `/services/${params.slug}`,
+      canonical: `/services/${slug}`,
     },
     openGraph: {
       title: `${service} | AirStream HVAC & Refrigeration`,
       description: `Discover AirStream’s ${service.toLowerCase()} solutions in Kenya. Reliable installation, repair, maintenance, and spare parts.`,
-      url: `/services/${params.slug}`,
+      url: `/services/${slug}`,
     },
   };
 }

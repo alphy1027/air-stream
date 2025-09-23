@@ -6,11 +6,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import React from "react";
 
-type ServiceProps = {
-  params: { slug: string };
-};
-
-export async function generateMetadata({ params }: ServiceProps): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const serviceInfo = services.find((service) => service.link === params.slug);
   if (!serviceInfo) {
     return notFound();

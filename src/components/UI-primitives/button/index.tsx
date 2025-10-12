@@ -13,10 +13,10 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "bg-primary text-brand-white ",
-        secondary: "bg-secondary text-brand-white",
-        accent: "bg-accent text-foreground-accent-btn",
-        transparent: "bg-transparent color-primary",
+        primary: "bg-primary text-brand-white primary-btn-shadow",
+        secondary: "bg-secondary text-brand-white secondary-btn-shadow",
+        accent: "bg-accent text-foreground-accent-btn accent-btn-shadow",
+        transparent: "bg-transparent color-primary px-2",
       },
     },
     defaultVariants: {

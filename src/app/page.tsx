@@ -19,18 +19,18 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <SectionContainer className="">
+    <SectionContainer className="h-[92%] flex flex-col justify-center">
       <div className="flex flex-col gap-y-brand-spacing-sm max-w-[760px]">
-        <h1 className="font-secondary text-heading-xl text-foreground-heading font-bold">
+        <h1 className="font-secondary text-heading-base md:text-heading-lg text-foreground-heading font-semibold md:font-bold">
           Expert Air Conditioning, Ventilation, and Refrigeration Services in Kenya
         </h1>
         <p className="">
           Expert installation, repair, and maintenance of air conditioning, ventilation, and refrigeration systems —
           keeping your home and business comfortable all year round.
         </p>
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-4 md:gap-brand-spacing">
           <Button>Get a Quote</Button>
-          <Button variant="transparent">Explore Our Services</Button>
+          <Button variant="secondary">Explore Our Services</Button>
         </div>
       </div>
     </SectionContainer>

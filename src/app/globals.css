@@ -104,8 +104,19 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   background: var(--background);
   color: var(--foreground);
   height: 100%;
   width: 100%;
+}
+
+.primary-btn-shadow {
+  box-shadow: 0px 4px 8px rgba(3, 68, 220, 0.2);
+}
+.secondary-btn-shadow {
+  box-shadow: 0px 4px 8px rgba(27, 31, 59, 0.2);
+}
+.accent-btn-shadow {
+  box-shadow: 0px 4px 8px rgba(255, 183, 3, 0.2);
 }

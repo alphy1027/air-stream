@@ -67,14 +67,14 @@ export default function RootLayout({
           </Link>
 
           <div className="flex items-center gap-2">
-            <nav className="font-semibold flex gap-2">
+            <nav className="font-semibold md:flex gap-2 hidden">
               {navLinks.map((navLink) => (
                 <Link key={navLink.to} href={navLink.to} className="px-brand-spacing-sm py-brand-spacing-xs">
                   {navLink.link}
                 </Link>
               ))}
             </nav>
-            <Button>Catalogue</Button>
+            <Button variant="accent">Catalogue</Button>
           </div>
         </header>
         <main className="flex-1">{children}</main>

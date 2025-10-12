@@ -12,6 +12,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     return notFound();
   }
   const service = serviceInfo.title;
+
   return {
     title: `${service} | AirStream HVAC & Refrigeration Services in Kenya`,
     description: `AirStream provides expert ${service.toLowerCase()} services in Kenya, including installation, repair, maintenance, and genuine spare parts.`,

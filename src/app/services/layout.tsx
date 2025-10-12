@@ -17,10 +17,5 @@ export const metadata: Metadata = {
 };
 
 export default function ServiceLayout({ children }: { children: ReactNode }) {
-  return (
-    <div className="">
-      <h3 className="">Service Layout</h3>
-      {children}
-    </div>
-  );
+  return <div className="">{children}</div>;
 }

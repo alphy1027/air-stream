@@ -1,19 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Afacad, Poppins } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Button from "@/components/UI-primitives/button";
 import { navLinks } from "@/content/navLinks";
 import { siteInfo } from "@/content/siteInfo";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const afacad = Afacad({
+  variable: "--font-afacad",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -55,17 +59,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col`}>
-        <header className=" bg-red-200 p-4 flex justify-around">
-          <Link href="/" className="bg-yellow-200 h-fit p-1">
-            <h1 className="font-bold text-2xl">AIR STREAM</h1>
+    <html lang="en" className={`${afacad.variable} ${poppins.variable} antialiased `}>
+      <body className="flex flex-col font-primary">
+        <header className="p-4 flex justify-between">
+          <Link href="/" className="h-fit p-1">
+            <h1 className="font-bold text-heading-base">Airstream</h1>
           </Link>
 
-          <div className="">
-            <nav className="font-semibold flex flex-col gap-1">
+          <div className="flex items-center gap-2">
+            <nav className="font-semibold flex gap-2">
               {navLinks.map((navLink) => (
-                <Link key={navLink.to} href={navLink.to}>
+                <Link key={navLink.to} href={navLink.to} className="px-brand-spacing-sm py-brand-spacing-xs">
                   {navLink.link}
                 </Link>
               ))}
@@ -73,8 +77,8 @@ export default function RootLayout({
             <Button>Catalogue</Button>
           </div>
         </header>
-        <main className="flex-1 bg-yellow-100">{children}</main>
-        <footer className=" bg-red-200 p-2 text-center">
+        <main className="flex-1">{children}</main>
+        <footer className="p-2 text-center">
           <h2 className="font-bold text-xl">Airstream</h2>
           <p className="">&copy; {new Date().getFullYear()} Airstream Cooling Systems Ltd. All rights reserved</p>
         </footer>

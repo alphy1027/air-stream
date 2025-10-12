@@ -1,3 +1,4 @@
+import SectionContainer from "@/components/section/SectionContainer";
 import Button from "@/components/UI-primitives/button";
 import { Metadata } from "next";
 
@@ -18,16 +19,20 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="">
-      <h1 className="">Expert Air Conditioning, Ventilation, and Refrigeration Services in Kenya</h1>
-      <p className="">
-        Expert installation, repair, and maintenance of air conditioning, ventilation, and refrigeration systems —
-        keeping your home and business comfortable all year round.
-      </p>
-      <div className="flex gap-4">
-        <Button>Get a Quote</Button>
-        <Button variant="outline">Explore Our Services</Button>
+    <SectionContainer className="">
+      <div className="flex flex-col gap-y-brand-spacing-sm max-w-[760px]">
+        <h1 className="font-secondary text-heading-xl text-foreground-heading font-bold">
+          Expert Air Conditioning, Ventilation, and Refrigeration Services in Kenya
+        </h1>
+        <p className="">
+          Expert installation, repair, and maintenance of air conditioning, ventilation, and refrigeration systems —
+          keeping your home and business comfortable all year round.
+        </p>
+        <div className="flex gap-4">
+          <Button>Get a Quote</Button>
+          <Button variant="transparent">Explore Our Services</Button>
+        </div>
       </div>
-    </div>
+    </SectionContainer>
   );
 }

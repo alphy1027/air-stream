@@ -1,31 +1,111 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #0344dc;
+  --secondary: #1b1f3b;
+  --accent: #ffb703;
+  --neutral: #ebf2ff;
+  --background: #f9fafa;
+  --foreground: #222222;
+  --foreground-borders: #a7b0c2;
+  --foreground-muted: #555555;
+  --foreground-heading: #111111;
+  --foreground-accent-btn: #1a1a1a;
+  --brand-white: #ffffff;
+
+  --brand-radius: 4px;
+
+  --brand-spacing-xs: 8px;
+  --brand-spacing-sm: 16px;
+  --brand-spacing: 24px;
+  --brand-spacing-lg: 32px;
+  --brand-spacing-xl: 40px;
+
+  --font-size-xs: 0.75rem; /* 12px, captions */
+  --font-size-sm: 0.875rem; /* 14px, secondary text */
+  --font-size-base: 1rem; /* 16px, body text */
+  --font-size-lg: 1.125rem; /* 18px, small headings */
+  --font-size-xl: 1.5rem; /* 24px, medium headings */
+  --font-size-2xl: 2rem; /* 32px, large headings */
+  --font-size-3xl: 2.25rem; /* 36px, large headings */
+  --font-size-4xl: 2.5rem; /* 40px, extra large headings */
+}
+
+.margin-auto {
+  margin: auto;
 }
 
 @theme inline {
+  /* FONT */
+  --font-primary: var(--font-afacad);
+  --font-secondary: var(--font-poppins);
+
+  /* COLOR */
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-neutral: var(--neutral);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-foreground-borders: var(--foreground-borders);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-foreground-heading: var(--foreground-heading);
+  --color-foreground-accent-btn: var(--foreground-accent-btn);
+  --color-brand-white: var(--brand-white);
+
+  /* fONT SIZE */
+  --text-caption-sm: var(--font-size-xs);
+  --text-caption-base: var(--font-size-sm);
+  --text-caption-lg: var(--font-size-base);
+  --text-caption-xl: var(--font-size-lg);
+
+  --text-body-xs: var(--font-size-xs);
+  --text-body-sm: var(--font-size-sm);
+  --text-body-base: var(--font-size-base);
+  --text-body-lg: var(--font-size-lg);
+  --text-body-xl: var(--font-size-xl);
+  --text-body-2xl: var(--font-size-2xl);
+  --text-body-3xl: var(--font-size-3xl);
+
+  --text-heading-xs: var(--font-size-base);
+  --text-heading-sm: var(--font-size-lg);
+  --text-heading-base: var(--font-size-xl);
+  --text-heading-lg: var(--font-size-2xl);
+  --text-heading-xl: var(--font-size-3xl);
+  --text-heading-2xl: var(--font-size-4xl);
+
+  --spacing-brand-spacing-xs: var(--brand-spacing-xs);
+  --spacing-brand-spacing-sm: var(--brand-spacing-sm);
+  --spacing-brand-spacing: var(--brand-spacing);
+  --spacing-brand-spacing-lg: var(--brand-spacing-lg);
+  --spacing-brand-spacing-xl: var(--brand-spacing-xl);
+
+  /* RADIUS */
+  --radius-brand-radius: var(--brand-radius);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--foreground);
+    --foreground: var(--background);
   }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
   height: 100%;
+  width: 100%;
 }

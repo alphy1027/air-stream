@@ -11,7 +11,6 @@ export const services = [
       "We offer planned maintenance and breakdown service for all your commercial & industrial refrigeration needs to ensure you are running smoothly.",
     ],
   },
-
   {
     title: "Air Conditioning",
     link: "air-conditioning",

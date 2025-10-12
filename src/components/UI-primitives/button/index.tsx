@@ -9,31 +9,25 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, VariantPr
 }
 
 const buttonVariants = cva(
-  "tracking-wide flex w-fit items-center uppercase justify-center rounded-sm cursor-pointer hover:scale-105 active:scale-95 transition-all duration-200 ease-in-out gap-x-4",
+  "tracking-wide flex w-fit py-3 px-8 text-body-lg items-center capitalize justify-center rounded-brand-radius font-semibold cursor-pointer hover:scale-105 active:scale-95 transition-all duration-200 ease-in-out gap-x-4",
   {
     variants: {
       variant: {
-        primary: "bg-primary color-background",
-        secondary: "bg-secondary color-primary",
-        outline: "bg-transparent color-primary border-2 border-primary",
-        "secondary-outline": "bg-transparent color-secondary border-2 border-secondary",
-      },
-      size: {
-        sm: "px-4 py-2 font-medium text-body-sm",
-        md: "px-6 py-3 font-semibold text-body-bas",
-        lg: "px-8 py-4 font-bold text-body-lg",
+        primary: "bg-primary text-brand-white ",
+        secondary: "bg-secondary text-brand-white",
+        accent: "bg-accent text-foreground-accent-btn",
+        transparent: "bg-transparent color-primary",
       },
     },
     defaultVariants: {
       variant: "primary",
-      size: "md",
     },
   }
 );
 
-export default function Button({ children, leftIcon, rightIcon, variant, size, className, ...props }: ButtonProps) {
+export default function Button({ children, leftIcon, rightIcon, variant, className, ...props }: ButtonProps) {
   return (
-    <button className={cn(buttonVariants({ variant, size }), className)} {...props}>
+    <button className={cn(buttonVariants({ variant }), className)} {...props}>
       {leftIcon && <span className="">{leftIcon}</span>}
       {children}
       {rightIcon && <span className="">{rightIcon}</span>}

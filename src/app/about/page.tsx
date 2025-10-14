@@ -33,7 +33,14 @@ export default function page() {
       <SectionTitle>Experience</SectionTitle>
       <Text>{about.section.experience}</Text>
       <SectionTitle>Why choose us</SectionTitle>
-      <Text>{about.whyChooseUs}</Text>
+      <div>
+        {about.advantages.map((item) => (
+          <div key={item.id} className="">
+            <h3 className="">{item.title}</h3>
+            <Text>{item.description}</Text>
+          </div>
+        ))}
+      </div>
     </SectionContainer>
   );
 }

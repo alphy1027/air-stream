@@ -22,15 +22,15 @@ export default function Home() {
     <SectionContainer className="h-[92%] flex flex-col justify-center">
       <div className="flex flex-col gap-y-brand-spacing-sm max-w-[760px]">
         <h1 className="font-secondary text-heading-base md:text-heading-lg text-foreground-heading font-semibold md:font-bold">
-          Expert Air Conditioning, Ventilation, and Refrigeration Services in Kenya
+          Reliable Air Conditioning, Ventilation & Refrigeration Services in Kenya
         </h1>
         <p className="">
-          Expert installation, repair, and maintenance of air conditioning, ventilation, and refrigeration systems —
-          keeping your home and business comfortable all year round.
+          From installation to maintenance, Air stream delivers reliable air conditioning and refrigeration solutions
+          designed for comfort, efficiency, and lasting performance.
         </p>
         <div className="flex flex-wrap gap-4 md:gap-brand-spacing">
           <Button>Get a Quote</Button>
-          <Button variant="secondary">Explore Our Services</Button>
+          <Button variant="secondary">Our Services</Button>
         </div>
       </div>
     </SectionContainer>

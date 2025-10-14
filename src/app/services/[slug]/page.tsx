@@ -41,13 +41,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       <SectionTitle className="">Service Page</SectionTitle>
       <div className="">
         <h3 className="">{service.title}</h3>
-        <h4 className="">
-          {service.description.map((item, itemId) => (
-            <Text key={itemId} className="">
-              == {item}
-            </Text>
-          ))}
-        </h4>
+        <Text className="">{service.description.message}</Text>
+        {service.description.points.map((item, id) => (
+          <Text key={id} className="">
+            == {item}
+          </Text>
+        ))}
       </div>
     </SectionContainer>
   );

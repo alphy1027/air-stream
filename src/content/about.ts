@@ -1,6 +1,6 @@
 export const about = {
   intro:
-    "AIRSTREAM COOLING SYSTEMS LIMITED was established in 2019. It has now established itself as a very reputed organization providing one stopsolution for Industrial Refrigeration requirements, catering from small organizations to large Chemical- Pharmaceutical Plants, from small food processing units to large Dairy plants while still maintaining expertise in our Installations.",
+    "Air stream Cooling Systems Ltd was established in 2019 and has now established itself as a very reputed partner for reliable air conditioning and refrigeration solutions. We design, install, and maintain systems for homes, commercial buildings, and industries — from food processing to pharmaceuticals. Our commitment to quality, efficiency, and innovation ensures every project delivers comfort, reliability, and long-term value.",
   description:
     "Supplies heating, air-conditioning, and refrigeration equipment. The Company offers residential and light commercial air conditioning systems and accessories, building systems and services, truck refrigeration, and refrigeration products such as freezers, coolers, cold room, and related products. We also provide maintenance, repair and consultancy services to manufacturing, retailing, mining and petrochemical companies in Kenya. We have expertise in chillers, air-conditioners, energy conservation, automation and advanced control systems.We understand that the comfort and safety of the work place are key to every customer's satisfaction and productivity. We work diligently to ensure that our clients heating and cooling systems are always operating at their optimum efficiency at all times, guaranteeing increased energy efficiency, extended equipment life time, consistent comfort in their work and office space, as well as a peace of mind that comes from knowing that your equipments will always perform as expected.",
   section: {
@@ -15,11 +15,33 @@ export const about = {
     mission:
       "Committed to providing quality Services at competitive rates in a timely manner while observing Governing Laws.",
     vision: "To create a better environment for all.",
+    values: "Reliability, professionalism, innovation, integrity, customer satisfaction",
     drive:
       "Every customer has their own specific requirements that are unique in their own way. This knowledge allows us to approach each client project differently, and design solutions that best satisfy the needs of each application.",
   },
-  whyChooseUs:
-    "We have a large and dedicated team of engineers and support staff who are always ready to assist clients by first understanding their needs and requirements. We consider ourselves as both engineers and contractors,with a determination to deliver functionality and aesthetically pleasing masterpieces in all our client installations. We are all about the details. Our experience has equipped us with the knowledge and expertise necessary to install systems that are most cost efficient and effective to the benefit of our clients. We are able to effectively manage and control electricity consumption,resulting in cost savings by automating and optimising your air conditioning and control systems. We are a professional and established company with a dedication to deliver quality workmanship. We always deliver. With Airstream Cooling Systems on board, you can trust that your project will be delivered on time, budget and beyond your expectations.",
+  advantages: [
+    {
+      id: 1,
+      title: "Trusted Professionals",
+      icon: "",
+      description:
+        "A seasoned team of experts dedicated to delivering quality workmanship. Our experts combine years of experience with attention to detail, ensuring every project meets the highest quality standards",
+    },
+    {
+      id: 2,
+      title: "Smart Solutions",
+      icon: "",
+      description:
+        "Efficient systems that cut energy costs and optimize performance. We tailor every design to your specific needs, using modern technologies that enhance comfort, reliability, and long-term value.",
+    },
+    {
+      id: 3,
+      title: "Guaranteed Satisfaction",
+      icon: "",
+      description:
+        "We stand by our promise to deliver every project on time and within budget. Our commitment to clear communication and dependable service ensures peace of mind long after installation.",
+    },
+  ],
   experience:
     "AIRSTREAM COOLING SYSTEMS was established in 2019. It has now established itself as a very reputed organization providing one stop solution for Industrial Refrigeration requirements, catering from small organizations to large Chemical- Pharmaceutical Plants, from small food processing units to large Dairy plants while still maintaining expertise in our Installations.",
 };

@@ -78,8 +78,19 @@ export default function RootLayout({
           </div>
         </header>
         <main className="flex-1">{children}</main>
-        <footer className="p-2 text-center">
+        <footer className="p-2 flex flex-col items-center gap-y-4">
           <h2 className="font-bold text-xl">Airstream</h2>
+          <nav className="font-semibold gap-2 flex items-center flex-wrap justify-center divide-x divide-foreground-borders">
+            {navLinks.map((navLink) => (
+              <Link
+                key={navLink.to}
+                href={navLink.to}
+                className="px-brand-spacing-xs sm:px-brand-spacing-sm hover:scale-105 duration-200 ease-in-out"
+              >
+                {navLink.link}
+              </Link>
+            ))}
+          </nav>
           <p className="">&copy; {new Date().getFullYear()} Airstream Cooling Systems Ltd. All rights reserved</p>
         </footer>
       </body>

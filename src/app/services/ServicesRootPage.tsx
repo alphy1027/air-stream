@@ -12,14 +12,18 @@ export default function ServicesRootPage() {
     <SectionContainer>
       <SectionTitle>SERVICES</SectionTitle>
       {services.map((service, id) => (
-        <div key={id}>
+        <div key={id} className="card">
           <SectionTitle>{service.title}</SectionTitle>
-          {service.description.map((item, itemId) => (
-            <Text key={itemId} className="">
-              == {item}
-            </Text>
-          ))}
+          <Text>{service.description.message}</Text>
+          <div className="">
+            {service.description.points.map((item, itemId) => (
+              <Text key={itemId} className="">
+                == {item}
+              </Text>
+            ))}
+          </div>
           <Button onClick={() => router.push(`/services/${service.link}`)}>View Service</Button>
+          <hr />
         </div>
       ))}
     </SectionContainer>

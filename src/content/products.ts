@@ -54,4 +54,9 @@ export const products = [
     name: "Gas Salamander",
     image: "",
   },
+  {
+    id: 12,
+    name: "Washing Machine",
+    image: "",
+  },
 ];

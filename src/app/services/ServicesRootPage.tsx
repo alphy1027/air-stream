@@ -23,7 +23,7 @@ export default function ServicesRootPage() {
             ))}
           </div>
           <Button onClick={() => router.push(`/services/${service.link}`)}>View Service</Button>
-          <hr />
+          <hr className="text-foreground-borders" />
         </div>
       ))}
     </SectionContainer>

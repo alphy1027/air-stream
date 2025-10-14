@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <SectionContainer className="h-[92%] flex flex-col justify-center">
       <div className="flex flex-col gap-y-brand-spacing-sm max-w-[760px]">
-        <h1 className="font-secondary text-heading-base md:text-heading-lg text-foreground-heading font-semibold md:font-bold">
+        <h1 className="font-secondary text-heading-base md:text-heading-lg text-foreground-heading font-bold">
           Reliable Air Conditioning, Ventilation & Refrigeration Services in Kenya
         </h1>
         <p className="">

@@ -1,4 +1,7 @@
 import SectionContainer from "@/components/section/SectionContainer";
+import SectionTitle from "@/components/UI-primitives/text/SectionTitle";
+import Text from "@/components/UI-primitives/text/Text";
+import { products } from "@/content/products";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -28,7 +31,16 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <SectionContainer>
-      <h2 className="">Products</h2>
+      <SectionTitle className="">Products</SectionTitle>
+
+      <div className="flex gap-brand-spacing flex-wrap justify-center">
+        {products.map((product) => (
+          <div key={product.id} className="flex flex-col gap-y-brand-spacing-sm">
+            <div className="w-[190px] h-[280px] bg-neutral rounded-brand-radius" />
+            <Text className="pl-1">{product.name}</Text>
+          </div>
+        ))}
+      </div>
     </SectionContainer>
   );
 }

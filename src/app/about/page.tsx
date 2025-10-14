@@ -35,8 +35,8 @@ export default function page() {
       <SectionTitle>Why choose us</SectionTitle>
       <div>
         {about.advantages.map((item) => (
-          <div key={item.id} className="">
-            <h3 className="">{item.title}</h3>
+          <div key={item.id} className="pb-brand-spacing">
+            <h3 className="font-semibold text-body-lg">{item.title}</h3>
             <Text>{item.description}</Text>
           </div>
         ))}

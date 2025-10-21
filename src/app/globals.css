@@ -140,7 +140,7 @@ h1 {
   @apply font-bold text-heading-xl font-secondary;
 }
 h2 {
-  @apply font-bold text-heading-lg font-secondary;
+  @apply font-bold text-heading-base md:text-heading-lg font-secondary;
 }
 h3 {
   @apply font-bold text-heading-base font-secondary;

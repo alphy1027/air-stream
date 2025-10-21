@@ -81,6 +81,7 @@
   --spacing-brand-spacing-lg: var(--brand-spacing-lg);
   --spacing-brand-spacing-xl: var(--brand-spacing-xl);
   --spacing-brand-spacing-2xl: var(--brand-spacing-2xl);
+  --spacing-brand-page-spacing: 120px;
 
   /* RADIUS */
   --radius-brand-radius: var(--brand-radius);

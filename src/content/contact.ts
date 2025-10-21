@@ -7,6 +7,7 @@ export const contact = {
   location: {
     street: "Ambank House 13th Floor, Suite 14",
     postal: " University Way P.O Box 53025-00200",
-    city: "Nairobi, Kenya",
+    city: "Nairobi",
   },
+  operationTime: "Mon - Sat: 8:00am - 5:00pm",
 };

@@ -20,6 +20,7 @@
   --brand-spacing: 24px;
   --brand-spacing-lg: 32px;
   --brand-spacing-xl: 40px;
+  --brand-spacing-2xl: 48px;
 
   --font-size-xs: 0.75rem; /* 12px, captions */
   --font-size-sm: 0.875rem; /* 14px, secondary text */
@@ -79,6 +80,7 @@
   --spacing-brand-spacing: var(--brand-spacing);
   --spacing-brand-spacing-lg: var(--brand-spacing-lg);
   --spacing-brand-spacing-xl: var(--brand-spacing-xl);
+  --spacing-brand-spacing-2xl: var(--brand-spacing-2xl);
 
   /* RADIUS */
   --radius-brand-radius: var(--brand-radius);
@@ -91,9 +93,9 @@
   }
 }
 
-@utility card {
+/* @utility card {
   @apply flex flex-col rounded-brand-radius gap-y-brand-spacing py-6;
-}
+} */
 @utility primary-btn-shadow {
   box-shadow: 0px 4px 8px rgba(3, 68, 220, 0.2);
 }
@@ -102,6 +104,15 @@
 }
 @utility accent-btn-shadow {
   box-shadow: 0px 4px 8px rgba(255, 183, 3, 0.2);
+}
+@utility m-left-auto {
+  margin-left: auto;
+}
+
+@layer components {
+  .card {
+    @apply flex flex-col gap-brand-spacing-sm;
+  }
 }
 
 *,
@@ -122,4 +133,23 @@ body {
   color: var(--foreground);
   height: 100%;
   width: 100%;
+}
+
+h1 {
+  @apply font-bold text-heading-xl font-secondary;
+}
+h2 {
+  @apply font-bold text-heading-lg font-secondary;
+}
+h3 {
+  @apply font-bold text-heading-base font-secondary;
+}
+h4 {
+  @apply font-semibold text-[1.25rem] font-secondary;
+}
+h5 {
+  @apply font-semibold text-heading-sm font-secondary;
+}
+h6 {
+  @apply font-semibold text-heading-xs font-secondary;
 }

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Afacad, Poppins } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
-import Button from "@/components/UI-primitives/button";
-import { navLinks } from "@/content/navLinks";
 import { siteInfo } from "@/content/siteInfo";
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
+import CallToAction from "@/components/section/CallToAction";
 
 const afacad = Afacad({
   variable: "--font-afacad",
@@ -60,39 +60,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${afacad.variable} ${poppins.variable} antialiased `}>
-      <body className="flex flex-col font-primary">
-        <header className="p-4 flex justify-between">
-          <Link href="/" className="h-fit p-1">
-            <h1 className="font-bold text-heading-base">Airstream</h1>
-          </Link>
-
-          <div className="flex items-center gap-2">
-            <nav className="font-semibold md:flex gap-2 hidden">
-              {navLinks.map((navLink) => (
-                <Link key={navLink.to} href={navLink.to} className="px-brand-spacing-sm py-brand-spacing-xs">
-                  {navLink.link}
-                </Link>
-              ))}
-            </nav>
-            <Button variant="accent">Catalogue</Button>
-          </div>
-        </header>
-        <main className="flex-1">{children}</main>
-        <footer className="p-2 flex flex-col items-center gap-y-4">
-          <h2 className="font-bold text-xl">Airstream</h2>
-          <nav className="font-semibold gap-2 flex items-center flex-wrap justify-center divide-x divide-foreground-borders">
-            {navLinks.map((navLink) => (
-              <Link
-                key={navLink.to}
-                href={navLink.to}
-                className="px-brand-spacing-xs sm:px-brand-spacing-sm hover:scale-105 duration-200 ease-in-out"
-              >
-                {navLink.link}
-              </Link>
-            ))}
-          </nav>
-          <p className="">&copy; {new Date().getFullYear()} Airstream Cooling Systems Ltd. All rights reserved</p>
-        </footer>
+      <body className="flex flex-col font-primary gap-y-brand-spacing-lg">
+        <Header />
+        <main className="flex-1">
+          <>{children}</>
+          <CallToAction />
+        </main>
+        <Footer />
       </body>
     </html>
   );

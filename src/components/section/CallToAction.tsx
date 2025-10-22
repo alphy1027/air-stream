@@ -7,7 +7,7 @@ import CtaPhoneIcon from "./icons/CtaPhoneIcon";
 const CallToAction = () => {
   return (
     <SectionContainer>
-      <div className="flex flex-col bg-primary items-end gap-y-brand-spacing p-brand-spacing justify-between md:py-brand-spacing md:px-brand-spacing-2xl lg:flex-row lg:py-brand-spacing-lg lg:px-32 xl:px-48 rounded-brand-radius">
+      <div className="flex flex-col bg-primary items-end gap-y-brand-spacing-sm p-brand-spacing justify-between md:py-brand-spacing md:px-brand-spacing-2xl lg:flex-row lg:py-brand-spacing-lg lg:px-32 xl:px-48 rounded-brand-radius">
         <div className="flex flex-col gap-y-brand-spacing-sm w-full">
           <h3 className="text-brand-white">Call Us Now!</h3>
           <Text className="max-w-[360px] text-neutral">

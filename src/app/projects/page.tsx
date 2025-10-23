@@ -2,7 +2,7 @@ import SectionContainer from "@/components/section/SectionContainer";
 import SectionTitle from "@/components/UI-primitives/text/SectionTitle";
 import { Metadata } from "next";
 import Text from "@/components/UI-primitives/text/Text";
-import MainProductsSection from "../products/sections/MainProductsSection";
+import MainProjectSection from "./sections/MainProjectSection";
 
 export const metadata: Metadata = {
   title: "Projects | AirStream HVAC & Refrigeration in Kenya",
@@ -30,7 +30,7 @@ export default function page() {
         Each project reflects our commitment to quality workmanship, innovative solutions, and reliable climate control
         systems built to last.
       </Text>
-      <MainProductsSection />
+      <MainProjectSection />
     </SectionContainer>
   );
 }

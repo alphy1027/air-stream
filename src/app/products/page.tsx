@@ -1,8 +1,8 @@
 import SectionContainer from "@/components/section/SectionContainer";
 import SectionTitle from "@/components/UI-primitives/text/SectionTitle";
 import Text from "@/components/UI-primitives/text/Text";
-import { products } from "@/content/products";
 import { Metadata } from "next";
+import MainProductsSection from "./sections/MainProductsSection";
 
 export const metadata: Metadata = {
   title: "HVAC and Refrigeration Products | AirStream HVAC & Refrigeration in Kenya",
@@ -39,14 +39,7 @@ export default function page() {
         genuine spare parts. Air stream supplies reliable, energy-efficient solutions designed to keep your home or
         business running smoothly.
       </Text>
-      <div className="flex gap-brand-spacing flex-wrap justify-center">
-        {products.map((product) => (
-          <div key={product.id} className="card gap-y-brand-spacing-xs">
-            <div className="w-[230px] h-[300px] bg-neutral rounded-brand-radius" />
-            <Text className="px-2 text-body-lg font-medium">{product.name}</Text>
-          </div>
-        ))}
-      </div>
+      <MainProductsSection />
     </SectionContainer>
   );
 }

@@ -7,7 +7,7 @@ import Button from "../UI-primitives/button";
 const Header = () => {
   return (
     <header className="p-4 flex justify-between">
-      <Badge className="text-brand-white" />
+      <Badge className="" />
 
       <div className="flex items-center gap-2">
         <nav className="font-semibold md:flex gap-2 hidden">

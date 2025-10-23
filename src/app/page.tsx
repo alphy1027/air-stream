@@ -2,6 +2,7 @@ import SectionContainer from "@/components/section/SectionContainer";
 import Button from "@/components/UI-primitives/button";
 import { Metadata } from "next";
 import GetInTouchSection from "./contact-us/sections/GetInTouchSection";
+import IndustrySection from "./home/sections/IndustrySection";
 
 export const metadata: Metadata = {
   title: "Airstream HVAC & Refrigeration Solutions in Kenya | Installation, Repair, Maintenance & Spare Parts",
@@ -36,6 +37,7 @@ export default function Home() {
           </div>
         </div>
       </SectionContainer>
+      <IndustrySection />
       <GetInTouchSection />
     </div>
   );

@@ -32,17 +32,19 @@ export default function page() {
         Each project reflects our commitment to quality workmanship, innovative solutions, and reliable climate control
         systems built to last.
       </Text>
-      <div className="flex gap-brand-spacing flex-col items-center">
+      <div className="flex pt-brand-spacing gap-brand-spacing-xl flex-col items-center">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="flex flex-col gap-y-brand-spacing-xs border border-foreground-borders w-fit rounded-brand-radius"
+            className={`flex flex-col lg:flex-row gap-y-brand-spacing-xs border border-foreground-borders w-fit rounded-brand-radius ${
+              project.id % 2 === 0 ? "lg:flex-row-reverse" : ""
+            }`}
           >
-            <div className="max-w-[435px] h-[350px] bg-neutral rounded-brand-radius" />
+            <div className="max-w-[435px] lg:w-[350px] lg:h-[420px] h-[380px] bg-neutral rounded-t-brand-radius" />
 
-            <div className="p-brand-spacing-sm max-w-[435px] flex flex-col gap-y-brand-spacing-xs md:p-brand-spacing lg:p-brand-spacing-lg">
+            <div className="p-brand-spacing-sm lg:justify-between lg:w-[380px] max-w-[435px] flex flex-col gap-y-brand-spacing-xs md:p-brand-spacing lg:p-brand-spacing-lg">
               <div className="">
-                <small className="uppercase bg-neutral px-2 py-0.5 border border-foreground-borders rounded-brand-radius w-fit">
+                <small className="uppercase bg-neutral text-foreground-muted px-2 py-0.5 border border-foreground-borders rounded-brand-radius w-fit">
                   18 September 2025
                 </small>
               </div>

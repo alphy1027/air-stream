@@ -9,7 +9,7 @@ export default function ProjectCard({ project }: { project: (typeof projects)[0]
         project.id % 2 === 0 ? "lg:flex-row-reverse" : ""
       }`}
     >
-      <div className="max-w-[435px] lg:w-[350px] lg:h-[420px] h-[380px] bg-neutral rounded-t-brand-radius" />
+      <div className="max-w-[435px] lg:w-[350px] lg:h-[420px] h-[380px] bg-neutral lg:rounded-brand-radius rounded-t-brand-radius" />
 
       <div className="p-brand-spacing-sm lg:justify-between lg:w-[380px] max-w-[435px] flex flex-col gap-y-brand-spacing-xs md:p-brand-spacing lg:p-brand-spacing-lg">
         <div className="">

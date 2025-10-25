@@ -1,3 +1,7 @@
+import SolutionsIcon from "@/app/about/icons/SolutionsIcon";
+import ThumbsIcon from "@/app/about/icons/ThumbsIcon";
+import TrustIcon from "@/app/about/icons/TrustIcon";
+
 export const about = {
   intro:
     "Air stream Cooling Systems Ltd was established in 2019 and has now established itself as a very reputed partner for reliable air conditioning and refrigeration solutions. We design, install, and maintain systems for homes, commercial buildings, and industries — from food processing to pharmaceuticals. Our commitment to quality, efficiency, and innovation ensures every project delivers comfort, reliability, and long-term value.",
@@ -23,21 +27,21 @@ export const about = {
     {
       id: 1,
       title: "Trusted Professionals",
-      icon: "",
+      icon: TrustIcon,
       description:
         "A seasoned team of experts dedicated to delivering quality workmanship. Our experts combine years of experience with attention to detail, ensuring every project meets the highest quality standards",
     },
     {
       id: 2,
       title: "Smart Solutions",
-      icon: "",
+      icon: SolutionsIcon,
       description:
         "Efficient systems that cut energy costs and optimize performance. We tailor every design to your specific needs, using modern technologies that enhance comfort, reliability, and long-term value.",
     },
     {
       id: 3,
       title: "Guaranteed Satisfaction",
-      icon: "",
+      icon: ThumbsIcon,
       description:
         "We stand by our promise to deliver every project on time and within budget. Our commitment to clear communication and dependable service ensures peace of mind long after installation.",
     },

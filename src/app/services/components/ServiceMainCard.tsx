@@ -6,7 +6,7 @@ export default function ServiceMainCard({ service, index }: { service: (typeof s
     <div
       className={`flex ${
         index % 2 === 0 ? "lg:flex-row-reverse" : ""
-      } flex-col lg:flex-row lg:gap-brand-spacing-2xl gap-brand-spacing`}
+      } flex-col lg:flex-row lg:gap-brand-spacing-2xl gap-brand-spacing-xs`}
     >
       <div className="bg-neutral rounded-brand-radius lg:w-[400px] lg:h-[530px] max-w-[415px] h-[415px]" />
       <ServiceDetails service={service} />

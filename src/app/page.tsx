@@ -3,6 +3,9 @@ import Button from "@/components/UI-primitives/button";
 import { Metadata } from "next";
 import GetInTouchSection from "./contact-us/sections/GetInTouchSection";
 import IndustrySection from "./home/sections/IndustrySection";
+import ServicesSection from "./services/sections/ServicesSection";
+import AdvantagesSection from "./about/sections/AdvantagesSection";
+import TestimonialSection from "./home/sections/TestimonialSection";
 
 export const metadata: Metadata = {
   title: "Airstream HVAC & Refrigeration Solutions in Kenya | Installation, Repair, Maintenance & Spare Parts",
@@ -37,7 +40,10 @@ export default function Home() {
           </div>
         </div>
       </SectionContainer>
+      <ServicesSection />
+      <AdvantagesSection />
       <IndustrySection />
+      <TestimonialSection />
       <GetInTouchSection />
     </div>
   );

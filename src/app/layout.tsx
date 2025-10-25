@@ -62,7 +62,7 @@ export default function RootLayout({
     <html lang="en" className={`${afacad.variable} ${poppins.variable} antialiased `}>
       <body className="flex flex-col font-primary gap-y-brand-spacing-lg">
         <Header />
-        <main className="flex-1 flex flex-col gap-y-brand-spacing">
+        <main className="flex-1 flex flex-col pb-brand-spacing gap-y-brand-spacing">
           <>{children}</>
           <CallToAction />
         </main>

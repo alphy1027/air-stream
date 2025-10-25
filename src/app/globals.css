@@ -114,6 +114,12 @@
   .card {
     @apply flex flex-col gap-brand-spacing-sm;
   }
+  .display-card {
+    @apply flex flex-col gap-brand-spacing-xs p-brand-spacing rounded-brand-radius w-[245px] md:p-brand-spacing-lg;
+  }
+  .page-container {
+    @apply flex flex-col gap-y-brand-spacing;
+  }
 }
 
 *,

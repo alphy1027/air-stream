@@ -8,5 +8,5 @@ type TitleProps = {
 };
 
 export default function SectionTitle({ className, children }: TitleProps) {
-  return <h2 className={twMerge("flex flex-col w-fit ", className)}>{children}</h2>;
+  return <h2 className={twMerge("w-fit text-foreground-heading", className)}>{children}</h2>;
 }

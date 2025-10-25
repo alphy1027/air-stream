@@ -5,6 +5,23 @@ import SectionTitle from "@/components/UI-primitives/text/SectionTitle";
 import Text from "@/components/UI-primitives/text/Text";
 import { services } from "@/content/services";
 
+import AirConIcon from "@/app/services/icons/AirConIcon";
+import FridgeIcon from "@/app/services/icons/FridgeIcon";
+import KitchenIcon from "@/app/services/icons/KitchenIcon";
+import RepairIcon from "@/app/services/icons/RepairIcon";
+import VentIcon from "@/app/services/icons/VentIcon";
+import React from "react";
+
+type IconKey = "airCon" | "fridge" | "kitchen" | "repair" | "vent";
+
+const icons: Record<IconKey, React.FC> = {
+  airCon: AirConIcon,
+  fridge: FridgeIcon,
+  kitchen: KitchenIcon,
+  repair: RepairIcon,
+  vent: VentIcon,
+};
+
 export default function ServicesSection() {
   return (
     <SectionContainer className="page-container items-center">
@@ -17,11 +34,14 @@ export default function ServicesSection() {
         space.
       </Text>
       <div className="flex flex-wrap gap-brand-spacing max-w-[900px] justify-center content-start">
-        {services.map((service) => (
-          <DisplayCard key={service.link} icon={service.icon} title={service.title} className="bg-neutral">
-            {service.intro}
-          </DisplayCard>
-        ))}
+        {services.map((service) => {
+          const icon = icons[service.icon as keyof typeof icons];
+          return (
+            <DisplayCard key={service.link} icon={icon} title={service.title} className="bg-neutral">
+              {service.intro}
+            </DisplayCard>
+          );
+        })}
         <div className="display-card bg-primary">
           <h4 className="text-brand-white">View Services</h4>
           <Button variant="transparent">ok</Button>

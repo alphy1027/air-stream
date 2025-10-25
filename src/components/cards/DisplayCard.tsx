@@ -1,11 +1,11 @@
-import { JSX } from "react";
+import React from "react";
 import Text from "../UI-primitives/text/Text";
 import { twMerge } from "tailwind-merge";
 
 type CardProps = {
   title: string;
   children: string;
-  icon: () => JSX.Element;
+  icon: React.FC;
   className?: string;
 };
 

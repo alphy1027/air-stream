@@ -1,14 +1,8 @@
-import AirConIcon from "@/app/services/icons/AirConIcon";
-import FridgeIcon from "@/app/services/icons/FridgeIcon";
-import KitchenIcon from "@/app/services/icons/KitchenIcon";
-import RepairIcon from "@/app/services/icons/RepairIcon";
-import VentIcon from "@/app/services/icons/VentIcon";
-
 export const services = [
   {
     title: "Air Conditioning",
     link: "air-conditioning",
-    icon: AirConIcon,
+    icon: "airCon",
     image: "",
     intro:
       "Efficient design, installation, and maintenance for residential, commercial, and industrial spaces — ensuring consistent comfort and energy savings.",
@@ -26,7 +20,7 @@ export const services = [
   {
     title: "Refrigeration Works",
     link: "refrigeration-works",
-    icon: FridgeIcon,
+    icon: "fridge",
     image: "",
     intro:
       "Specialized refrigeration systems for commercial, industrial, and processing facilities — including cold rooms, chillers, and temperature-controlled environments.",
@@ -44,7 +38,7 @@ export const services = [
   {
     title: "Mechanical Ventilation",
     link: "mechanical-ventilation",
-    icon: VentIcon,
+    icon: "vent",
     image: "",
     intro:
       "Fresh air systems for healthier indoor environments — covering fume extraction, LEV testing, and heat recovery ventilation.",
@@ -61,7 +55,7 @@ export const services = [
   {
     title: "Commercial Kitchen Equipment",
     link: "commercial-kitchen-equipment",
-    icon: KitchenIcon,
+    icon: "kitchen",
     image: "",
     intro:
       "Professional-grade equipment supply, installation, and maintenance for reliable and efficient kitchen operations.",
@@ -74,7 +68,7 @@ export const services = [
   {
     title: "Repair & Maintenance Services",
     link: "repair-services",
-    icon: RepairIcon,
+    icon: "repair",
     image: "",
     intro:
       "Expert troubleshooting, system redesign, and preventive maintenance to keep your cooling and ventilation systems performing at their best.",

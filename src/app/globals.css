@@ -120,6 +120,9 @@
   .page-container {
     @apply flex flex-col gap-y-brand-spacing;
   }
+  .brand-icon {
+    @apply w-16 h-16 lg:w-20 lg:h-20;
+  }
 }
 
 *,

@@ -1,11 +1,11 @@
-import BuildingsIcon from "@/app/home/icons/BuildingsIcon";
-import ColdStorageIcon from "@/app/home/icons/ColdStorageIcon";
-import EducationIcon from "@/app/home/icons/EducationIcon";
-import FoodRetailIcon from "@/app/home/icons/FoodRetailIcon";
-import HospitalityIcon from "@/app/home/icons/HospitalityIcon";
-import IndustrialIcon from "@/app/home/icons/IndustrialIcon";
-import KitchenIcon from "@/app/home/icons/KitchenIcon";
-import RestaurantsIcon from "@/app/home/icons/RestaurantsIcon";
+import BuildingsIcon from "@/app/home/icons/industry-section/BuildingsIcon";
+import ColdStorageIcon from "@/app/home/icons/industry-section/ColdStorageIcon";
+import EducationIcon from "@/app/home/icons/industry-section/EducationIcon";
+import FoodRetailIcon from "@/app/home/icons/industry-section/FoodRetailIcon";
+import HospitalityIcon from "@/app/home/icons/industry-section/HospitalityIcon";
+import IndustrialIcon from "@/app/home/icons/industry-section/IndustrialIcon";
+import KitchenIcon from "@/app/home/icons/industry-section/KitchenIcon";
+import RestaurantsIcon from "@/app/home/icons/industry-section/RestaurantsIcon";
 
 export const industry = [
   {

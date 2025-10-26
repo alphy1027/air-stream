@@ -16,7 +16,7 @@ const buttonVariants = cva(
         primary: "bg-primary text-brand-white primary-btn-shadow",
         secondary: "bg-secondary text-brand-white secondary-btn-shadow",
         accent: "bg-accent text-foreground-accent-btn accent-btn-shadow",
-        transparent: "bg-transparent color-primary px-2",
+        transparent: "bg-transparent text-primary px-2",
       },
     },
     defaultVariants: {

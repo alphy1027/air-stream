@@ -7,6 +7,8 @@ import ServicesSection from "./services/sections/ServicesSection";
 import AdvantagesSection from "./about/sections/AdvantagesSection";
 import TestimonialSection from "./home/sections/TestimonialSection";
 import ProductsSection from "./home/sections/ProductsSection";
+import AboutSection from "./home/sections/AboutSection";
+import BrandSection from "./home/sections/BrandSection";
 
 export const metadata: Metadata = {
   title: "Airstream HVAC & Refrigeration Solutions in Kenya | Installation, Repair, Maintenance & Spare Parts",
@@ -41,6 +43,8 @@ export default function Home() {
           </div>
         </div>
       </SectionContainer>
+      <BrandSection />
+      <AboutSection />
       <ServicesSection />
       <ProductsSection />
       <AdvantagesSection />

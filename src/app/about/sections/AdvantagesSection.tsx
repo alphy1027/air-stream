@@ -20,7 +20,7 @@ export default function AdvantagesSection() {
             </Text>
           </div>
           {about.advantages.map((item) => (
-            <DisplayCard icon={item.icon} title={item.title} key={item.id} className="bg-background">
+            <DisplayCard icon={item.icon} title={item.title} key={item.id} className="">
               {item.description}
             </DisplayCard>
           ))}

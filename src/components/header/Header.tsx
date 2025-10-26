@@ -17,7 +17,7 @@ const Header = () => {
             </Link>
           ))}
         </nav>
-        <Button variant="accent">Catalogue</Button>
+        <Button>Catalogue</Button>
       </div>
     </header>
   );

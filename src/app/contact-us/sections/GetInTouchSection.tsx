@@ -32,7 +32,7 @@ export default function GetInTouchSection() {
           </div>
         </div>
         <div>
-          <div className="card max-w-[520px] w-full gap-y-brand-spacing-xs">
+          <div className="card max-w-[520px] w-full gap-y-brand-spacing-sm">
             <h4 className="text-brand-white">Send Us a Message</h4>
             <Text className="text-neutral">Send us a message and we will get back to you as soon as possible</Text>
             <form className="card gap-y-brand-spacing-xs">

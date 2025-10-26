@@ -12,9 +12,9 @@ export default function TestimonialCard({ review }: { review: (typeof reviews)[0
       <div className="flex items-center justify-between">
         <div className="flex flex-col">
           <h6 className="text-primary font-secondary">{review.name}</h6>
-          <small className="text-foreground-muted text-caption-base">{review.role}</small>
+          <small className="text-foreground-muted text-caption-lg italic">{review.role}</small>
         </div>
-        <div className="flex items-center gap-x-4">
+        <div className="flex items-center gap-x-brand-spacing">
           <Button variant="transparent" leftIcon={<ArrowLeftIcon />} />
           <Button variant="transparent" rightIcon={<ArrowRightIcon />} />
         </div>

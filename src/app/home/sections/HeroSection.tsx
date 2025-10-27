@@ -21,7 +21,7 @@ export default function HeroSection() {
         </SectionContainer>
       </div>
       <div className="w-full p-1 bg-secondary flex justify-center items-center">
-        <Button variant="transparent" rightIcon={<ArrowDown />} className="border-foreground-borders border" />
+        <Button variant="transparent" rightIcon={<ArrowDown />} className="animate animate-bounce" />
       </div>
       <BrandSection />
     </section>

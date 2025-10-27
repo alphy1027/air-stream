@@ -126,6 +126,9 @@
   .brand-icon {
     @apply w-16 h-16 lg:w-20 lg:h-20;
   }
+  .crumb-link {
+    @apply text-body-base py-0.5 px-1 capitalize text-neutral;
+  }
 }
 
 *,
@@ -142,7 +145,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
   height: 100%;
   width: 100%;

@@ -4,6 +4,7 @@ import SectionTitle from "../UI-primitives/text/SectionTitle";
 import HomeIcon from "./icons/HomeIcon";
 import Link from "next/link";
 import RightBracket from "./icons/RightBracket";
+import React from "react";
 
 export default function LocationDetails() {
   const location = usePathname();
@@ -17,20 +18,20 @@ export default function LocationDetails() {
       currentLink += `/${crumb}`;
 
       return (
-        <div key={crumb} className="flex items-center gap-brand-spacing-xs">
+        <React.Fragment key={crumb}>
           <RightBracket />{" "}
-          <Link href={currentLink} className="font-medium text-body-base capitalize text-neutral">
+          <Link href={currentLink} className="crumb-link">
             {crumb}
           </Link>
-        </div>
+        </React.Fragment>
       );
     });
 
   return (
     <div className="flex flex-col gap-brand-spacing-xs">
       <SectionTitle className="text-brand-white capitalize">{currentLocation}</SectionTitle>
-      <nav className="flex items-center gap-brand-spacing-sm">
-        <Link href="/" className="font-medium flex items-center gap-brand-spacing-xs text-body-base text-neutral">
+      <nav className="flex items-center gap-brand-spacing-xs">
+        <Link href="/" className="flex items-center gap-brand-spacing-xs crumb-link">
           <HomeIcon />
           <span className="">Home</span>
         </Link>

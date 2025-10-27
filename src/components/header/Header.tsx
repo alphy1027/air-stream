@@ -6,7 +6,7 @@ import Button from "../UI-primitives/button";
 
 const Header = () => {
   return (
-    <header className="p-3 flex justify-between items-center w-[96%] md:w-[92%] max-w-[1400px] absolute top-brand-spacing left-1/2 -translate-x-1/2 bg-background rounded-brand-radius">
+    <header className="p-3 flex justify-between items-center w-[96%] md:w-[92%] max-w-[1400px] z-50 absolute top-brand-spacing left-1/2 -translate-x-1/2 bg-background rounded-brand-radius">
       <Badge className="" />
 
       <div className="flex items-center gap-2">

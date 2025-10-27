@@ -5,6 +5,7 @@ import { siteInfo } from "@/content/siteInfo";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import CallToAction from "@/components/section/CallToAction";
+import AppMainHead from "@/components/section/AppMainHead";
 
 const afacad = Afacad({
   variable: "--font-afacad",
@@ -61,6 +62,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${afacad.variable} ${poppins.variable} antialiased `}>
       <body className="flex relative flex-col font-primary gap-y-brand-spacing-lg">
+        <AppMainHead />
         <Header />
         <main className="flex-1 flex flex-col pb-brand-spacing gap-y-brand-spacing">
           <>{children}</>

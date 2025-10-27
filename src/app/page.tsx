@@ -6,10 +6,9 @@ import AdvantagesSection from "./about/sections/AdvantagesSection";
 import TestimonialSection from "./home/sections/TestimonialSection";
 import ProductsSection from "./home/sections/ProductsSection";
 import AboutSection from "./home/sections/AboutSection";
-import HeroSection from "./home/sections/HeroSection";
 
 export const metadata: Metadata = {
-  title: "Airstream HVAC & Refrigeration Solutions in Kenya | Installation, Repair, Maintenance & Spare Parts",
+  title: "Airstream Cooling Systems | HVAC & Refrigeration Solutions in Kenya",
   description:
     "Airstream provides expert air conditioning, refrigeration, and ventilation services in Kenya. We specialize in installation, repair, maintenance, and supply of genuine spare parts, delivering reliable HVAC solutions for homes, offices, and commercial spaces.",
   alternates: {
@@ -26,7 +25,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="flex flex-col gap-y-brand-page-spacing">
-      <HeroSection />
       <AboutSection />
       <ServicesSection />
       <ProductsSection />

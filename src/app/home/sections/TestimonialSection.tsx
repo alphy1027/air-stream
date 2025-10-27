@@ -10,8 +10,8 @@ export default function TestimonialSection() {
       <SectionContainer className="flex flex-col items-center lg:flex-row lg:justify-around gap-brand-spacing lg:gap-0">
         <div className="flex flex-col self-start gap-y-brand-spacing-sm w-fit">
           <SectionTitle>
-            Our <span className="text-primary">Clients Speak</span>
-            <br /> for Us
+            Our <span className="text-primary">clients speak</span>
+            <br /> for us
           </SectionTitle>
           <QuoteIcon />
         </div>

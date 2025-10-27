@@ -81,7 +81,7 @@
   --spacing-brand-spacing-lg: var(--brand-spacing-lg);
   --spacing-brand-spacing-xl: var(--brand-spacing-xl);
   --spacing-brand-spacing-2xl: var(--brand-spacing-2xl);
-  --spacing-brand-page-spacing: 120px;
+  --spacing-brand-page-spacing: 104px;
 
   /* RADIUS */
   --radius-brand-radius: var(--brand-radius);
@@ -162,4 +162,9 @@ h5 {
 }
 h6 {
   @apply font-semibold text-heading-xs font-secondary;
+}
+
+.hero-img {
+  mask-image: linear-gradient(black, transparent);
+  -webkit-mask-image: linear-gradient(black, transparent);
 }

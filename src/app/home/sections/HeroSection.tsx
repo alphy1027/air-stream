@@ -16,7 +16,7 @@ export default function HeroSection() {
           priority
           className="object-cover object-center hero-img -z-10"
         />
-        <SectionContainer className="flex flex-col py-0 justify-center sm:translate-y-1/2">
+        <SectionContainer className="flex flex-col py-0 justify-center translate-y-1/2">
           <HeroContent />
         </SectionContainer>
       </div>

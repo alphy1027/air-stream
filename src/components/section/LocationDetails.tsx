@@ -9,7 +9,7 @@ export default function LocationDetails() {
   const location = usePathname();
   const currentLocation = location.split("/").at(-1);
   let currentLink = "";
-  console.log("locations", location);
+
   const crumbs = location
     .split("/")
     .filter((crumb) => crumb !== "")
@@ -25,6 +25,7 @@ export default function LocationDetails() {
         </div>
       );
     });
+
   return (
     <div className="flex flex-col gap-brand-spacing-xs">
       <SectionTitle className="text-brand-white capitalize">{currentLocation}</SectionTitle>

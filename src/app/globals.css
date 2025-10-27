@@ -35,6 +35,9 @@
 .margin-auto {
   margin: auto;
 }
+.m-top-auto {
+  margin-top: auto;
+}
 
 @theme inline {
   /* FONT */

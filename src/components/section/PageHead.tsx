@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function PageHead() {
   return (
-    <div className="relative min-h-[40vh] md:min-h-[45vh] lg:min-h-[45vh] bg-secondary -z-30 flex flex-col justify-center">
+    <div className="relative min-h-[30vh] md:min-h-[30vh] lg:min-h-[40vh] bg-secondary -z-30 flex flex-col justify-end">
       <Image
         src="/images/hero.png"
         alt="HVAC systems"
@@ -13,7 +13,7 @@ export default function PageHead() {
         priority
         className="object-cover object-center hero-img -z-10"
       />
-      <SectionContainer className="flex flex-col py-0 justify-center translate-y-1/2 ">
+      <SectionContainer className="flex flex-col py-0 justify-center translate-y-3/4 ">
         <LocationDetails />
       </SectionContainer>
     </div>

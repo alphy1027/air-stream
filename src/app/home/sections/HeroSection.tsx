@@ -8,7 +8,7 @@ import ArrowDown from "../icons/ArrowDown";
 export default function HeroSection() {
   return (
     <section className="">
-      <div className="relative min-h-[70vh] md:min-h-[80vh] lg:min-h-[90vh] bg-secondary -z-30 flex flex-col justify-center">
+      <div className="relative min-h-[80vh] md:min-h-[80vh] lg:min-h-[90vh] bg-secondary -z-30 flex flex-col justify-center">
         <Image
           src="/images/hero.png"
           alt="HVAC systems"
@@ -16,7 +16,7 @@ export default function HeroSection() {
           priority
           className="object-cover object-center hero-img -z-10"
         />
-        <SectionContainer className="flex flex-col py-0 justify-center translate-y-1/4 sm:translate-y-1/2">
+        <SectionContainer className="flex flex-col py-0 justify-center sm:translate-y-1/2">
           <HeroContent />
         </SectionContainer>
       </div>

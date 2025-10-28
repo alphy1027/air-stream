@@ -60,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${afacad.variable} ${poppins.variable} antialiased `}>
+    <html data-scroll-behavior="smooth" lang="en" className={`${afacad.variable} ${poppins.variable} antialiased `}>
       <body className="flex relative flex-col font-primary gap-y-brand-spacing-lg">
         <AppMainHead />
         <Header />

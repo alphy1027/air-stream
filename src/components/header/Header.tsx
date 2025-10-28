@@ -24,7 +24,7 @@ const Header = () => {
         </nav>
         <Button>Catalogue</Button>
       </div>
-      <Button rightIcon={<MenuIcon />} className="md:hidden p-3 rounded-full" />
+      <Button rightIcon={<MenuIcon />} variant="transparent" className="md:hidden p-1.5 rounded-full" />
     </header>
   );
 };

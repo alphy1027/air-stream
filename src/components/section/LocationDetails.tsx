@@ -8,7 +8,7 @@ import React from "react";
 
 export default function LocationDetails() {
   const location = usePathname();
-  const currentLocation = location.split("/").at(-1);
+  const currentLocation = location.split("/").at(-1)?.replace(/-/g, " ");
   let currentLink = "";
 
   const crumbs = location
@@ -18,17 +18,17 @@ export default function LocationDetails() {
       currentLink += `/${crumb}`;
 
       return (
-        <li key={crumb}>
+        <li key={crumb} className="flex items-center gap-1">
           <RightBracket />{" "}
           <Link href={currentLink} className="crumb-link">
-            {crumb}
+            {crumb.replace(/-/g, " ")}
           </Link>
         </li>
       );
     });
 
   return (
-    <div className="flex flex-col gap-brand-spacing-xs">
+    <div className="flex flex-col gap-brand-spacing-xs w-fit">
       <SectionTitle className="text-brand-white capitalize">{currentLocation}</SectionTitle>
       <nav aria-label="BreadCrumb">
         <ol className="flex items-center gap-1">

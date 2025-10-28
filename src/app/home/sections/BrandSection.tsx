@@ -10,7 +10,7 @@ import BoschIcon from "../icons/brand-section/BoschIcon";
 
 export default function BrandSection() {
   return (
-    <div className="bg-secondary py-brand-spacing">
+    <div id="brand" className="bg-secondary py-brand-spacing">
       <SectionContainer className="page-container items-center">
         <SectionTitle className="text-brand-white text-center">
           We work with top <br />

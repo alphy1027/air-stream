@@ -101,13 +101,13 @@
   @apply flex flex-col rounded-brand-radius gap-y-brand-spacing py-6;
 } */
 @utility primary-btn-shadow {
-  box-shadow: 0px 4px 8px rgba(3, 68, 220, 0.2);
+  box-shadow: 0px 4px 8px rgba(3, 68, 220, 0.15);
 }
 @utility secondary-btn-shadow {
-  box-shadow: 0px 4px 8px rgba(27, 31, 59, 0.2);
+  box-shadow: 0px 4px 8px rgba(27, 31, 59, 0.15);
 }
 @utility accent-btn-shadow {
-  box-shadow: 0px 4px 8px rgba(255, 183, 3, 0.2);
+  box-shadow: 0px 4px 8px rgba(255, 183, 3, 0.15);
 }
 @utility m-left-auto {
   margin-left: auto;
@@ -127,7 +127,7 @@
     @apply w-16 h-16 lg:w-20 lg:h-20;
   }
   .crumb-link {
-    @apply text-body-base py-0.5 px-1 capitalize text-neutral;
+    @apply text-body-base py-0.5 px-1 capitalize text-neutral hover:text-brand-white duration-200 transition-all ease-in;
   }
 }
 

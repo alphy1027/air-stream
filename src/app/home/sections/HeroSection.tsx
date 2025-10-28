@@ -8,7 +8,7 @@ import ArrowDown from "../icons/ArrowDown";
 export default function HeroSection() {
   return (
     <section className="">
-      <div className="relative min-h-[80vh] md:min-h-[80vh] lg:min-h-[90vh] bg-secondary -z-30 flex flex-col justify-center">
+      <div className="relative min-h-[85vh] md:min-h-[85vh] lg:min-h-[90vh] bg-secondary -z-30 flex flex-col justify-center">
         <Image
           src="/images/hero.png"
           alt="HVAC systems"
@@ -19,9 +19,11 @@ export default function HeroSection() {
         <SectionContainer className="flex flex-col py-0 justify-center translate-y-1/2">
           <HeroContent />
         </SectionContainer>
-      </div>
-      <div className="w-full p-1 bg-secondary flex justify-center items-center">
-        <Button variant="transparent" rightIcon={<ArrowDown />} className="animate animate-bounce" />
+        <Button
+          variant="transparent"
+          rightIcon={<ArrowDown />}
+          className="animate animate-bounce absolute left-1/2 -translate-x-1/2 bottom-0"
+        />
       </div>
       <BrandSection />
     </section>

@@ -8,8 +8,8 @@ type BadgeProps = {
 const Badge = ({ className }: BadgeProps) => {
   return (
     <Link href="/" className="p-0.5">
-      <h5 className={twMerge("text-secondary tracking-wide font-bold", className)}>
-        Air<span className="text-primary">stream</span>
+      <h5 className={twMerge("text-brand-white tracking-wide font-bold", className)}>
+        Air<span className="text-accent">stream</span>
       </h5>
     </Link>
   );

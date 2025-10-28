@@ -11,7 +11,7 @@ export default function HeroContent() {
         From installation to maintenance, Air stream delivers reliable air conditioning and refrigeration solutions
         designed for comfort, efficiency, and lasting performance.
       </Text>
-      <div className="flex flex-wrap gap-4 md:gap-brand-spacing">
+      <div className="flex flex-wrap gap-brand-spacing md:gap-brand-spacing-lg lg:gap-brand-spacing-xl">
         <Button>Request service</Button>
         <Button variant="transparent" className="text-brand-white">
           Our Services

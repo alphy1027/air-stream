@@ -18,24 +18,28 @@ export default function LocationDetails() {
       currentLink += `/${crumb}`;
 
       return (
-        <React.Fragment key={crumb}>
+        <li key={crumb}>
           <RightBracket />{" "}
           <Link href={currentLink} className="crumb-link">
             {crumb}
           </Link>
-        </React.Fragment>
+        </li>
       );
     });
 
   return (
     <div className="flex flex-col gap-brand-spacing-xs">
       <SectionTitle className="text-brand-white capitalize">{currentLocation}</SectionTitle>
-      <nav className="flex items-center gap-brand-spacing-xs">
-        <Link href="/" className="flex items-center gap-brand-spacing-xs crumb-link">
-          <HomeIcon />
-          <span className="">Home</span>
-        </Link>
-        {crumbs}
+      <nav aria-label="BreadCrumb">
+        <ol className="flex items-center gap-1">
+          <li>
+            <Link href="/" className="flex items-center gap-brand-spacing-xs crumb-link">
+              <HomeIcon />
+              <span className="">Home</span>
+            </Link>
+          </li>
+          {crumbs}
+        </ol>
       </nav>
     </div>
   );

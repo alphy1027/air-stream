@@ -7,7 +7,7 @@ export default function ServicesRootPage() {
   return (
     <SectionContainer className="flex flex-col gap-y-brand-spacing">
       <SectionTitle>
-        Reliable <span className="text-primary">HVAC Solutions</span> for Homes & Businesses in Kenya
+        Reliable <span className="text-primary">HVAC Solutions</span> for Homes <br />& Businesses in Kenya
       </SectionTitle>
       <Text className="max-w-[760px]">
         At Air stream, we provide comprehensive HVAC and refrigeration solutions tailored to homes, businesses, and

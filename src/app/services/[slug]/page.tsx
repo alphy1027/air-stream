@@ -1,10 +1,9 @@
 import SectionContainer from "@/components/section/SectionContainer";
-import SectionTitle from "@/components/UI-primitives/text/SectionTitle";
-import Text from "@/components/UI-primitives/text/Text";
 import { services } from "@/content/services";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import React from "react";
+import ServiceDetails from "../components/ServiceDetails";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -38,16 +37,8 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
   return (
     <SectionContainer>
-      <SectionTitle className="">Service Page</SectionTitle>
-      <div className="">
-        <h3 className="">{service.title}</h3>
-        <Text className="">{service.description.message}</Text>
-        {service.description.points.map((item, id) => (
-          <Text key={id} className="">
-            == {item}
-          </Text>
-        ))}
-      </div>
+      <div className="rounded-brand-radius w-full h-[300px] bg-neutral" />
+      <ServiceDetails service={service} />
     </SectionContainer>
   );
 }

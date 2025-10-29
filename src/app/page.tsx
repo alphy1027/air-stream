@@ -7,6 +7,7 @@ import TestimonialSection from "./home/sections/TestimonialSection";
 import ProductsSection from "./home/sections/ProductsSection";
 import AboutSection from "./home/sections/AboutSection";
 import ScrollToTop from "@/components/section/ScrollToTop";
+import ProjectSection from "./home/sections/ProjectSection";
 
 export const metadata: Metadata = {
   title: "Airstream Cooling Systems | HVAC & Refrigeration Solutions in Kenya",
@@ -32,6 +33,7 @@ export default function Home() {
       <ProductsSection />
       <AdvantagesSection />
       <IndustrySection />
+      <ProjectSection />
       <TestimonialSection />
       <GetInTouchSection />
     </div>

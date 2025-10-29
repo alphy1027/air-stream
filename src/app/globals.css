@@ -124,7 +124,7 @@
     @apply flex flex-col gap-y-brand-spacing;
   }
   .brand-icon {
-    @apply w-16 h-16 lg:w-20 lg:h-20;
+    @apply w-16 h-16 md:w-20 md:h-20;
   }
   .crumb-link {
     @apply text-caption-base py-0.5 px-1 cursor-pointer capitalize text-neutral hover:text-brand-white duration-200 transition-all ease-in;

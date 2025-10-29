@@ -14,7 +14,7 @@ export default function AboutSection() {
           company
         </SectionTitle>
         <Text>{about.intro}</Text>
-        <LinkButton href="/about" className="self-end">
+        <LinkButton noIcon variant="primary" href="/about" className="self-end">
           Learn more
         </LinkButton>
       </div>

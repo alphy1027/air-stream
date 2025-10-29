@@ -1,10 +1,9 @@
 import SectionContainer from "@/components/section/SectionContainer";
-import Button from "@/components/UI-primitives/button";
 import SectionTitle from "@/components/UI-primitives/text/SectionTitle";
 import Text from "@/components/UI-primitives/text/Text";
-import ArrowRightIcon from "../icons/ArrowRightIcon";
 import { products } from "@/content/products";
 import ProductCard from "@/app/products/sections/ProductCard";
+import LinkButton from "@/components/UI-primitives/button/LinkButton";
 
 export default function ProductsSection() {
   return (
@@ -20,9 +19,9 @@ export default function ProductsSection() {
           </Text>
         </div>
 
-        <Button variant="transparent" rightIcon={<ArrowRightIcon />} className="text-primary self-end">
+        <LinkButton href="/products" className="text-primary self-end">
           View Products
-        </Button>
+        </LinkButton>
       </div>
       <div className="flex flex-wrap items-center justify-center gap-brand-spacing-sm md:gap-brand-spacing">
         {products.slice(0, 4).map((product) => (

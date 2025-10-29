@@ -1,4 +1,5 @@
 import Button from "@/components/UI-primitives/button";
+import LinkButton from "@/components/UI-primitives/button/LinkButton";
 import Text from "@/components/UI-primitives/text/Text";
 
 export default function HeroContent() {
@@ -13,9 +14,9 @@ export default function HeroContent() {
       </Text>
       <div className="flex flex-wrap gap-brand-spacing md:gap-brand-spacing-lg lg:gap-brand-spacing-xl">
         <Button>Request service</Button>
-        <Button variant="transparent" className="text-brand-white">
+        <LinkButton href="/services" noIcon className="text-brand-white">
           Our Services
-        </Button>
+        </LinkButton>
       </div>
     </div>
   );

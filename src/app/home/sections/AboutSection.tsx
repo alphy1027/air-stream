@@ -1,9 +1,8 @@
 import SectionContainer from "@/components/section/SectionContainer";
-import Button from "@/components/UI-primitives/button";
 import SectionTitle from "@/components/UI-primitives/text/SectionTitle";
 import Text from "@/components/UI-primitives/text/Text";
 import { about } from "@/content/about";
-import ArrowRightIcon from "../icons/ArrowRightIcon";
+import LinkButton from "@/components/UI-primitives/button/LinkButton";
 
 export default function AboutSection() {
   return (
@@ -15,9 +14,9 @@ export default function AboutSection() {
           company
         </SectionTitle>
         <Text>{about.intro}</Text>
-        <Button variant="transparent" rightIcon={<ArrowRightIcon />} className="self-end">
+        <LinkButton href="/about" className="self-end">
           Learn more
-        </Button>
+        </LinkButton>
       </div>
     </SectionContainer>
   );

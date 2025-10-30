@@ -11,7 +11,7 @@ type CardProps = {
 
 export default function DisplayCard({ title, children, className, icon: Icon }: CardProps) {
   return (
-    <article className={twMerge("display-card bg-background", className)}>
+    <article className={twMerge("display-card", className)}>
       <Icon />
       <h4 className="">{title}</h4>
       <Text>{children}</Text>

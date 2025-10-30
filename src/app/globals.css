@@ -6,6 +6,7 @@
   --accent: #ffb703;
   --neutral: #ebf2ff;
   --background: #f9fafa;
+  --off-white: #f9fafa;
   --foreground: #222222;
   --foreground-borders: #a7b0c2;
   --foreground-muted: #555555;
@@ -50,6 +51,7 @@
   --color-accent: var(--accent);
   --color-neutral: var(--neutral);
   --color-background: var(--background);
+  --color-off-white: var(--off-white);
   --color-foreground: var(--foreground);
   --color-foreground-borders: var(--foreground-borders);
   --color-foreground-muted: var(--foreground-muted);

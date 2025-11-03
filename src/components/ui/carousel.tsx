@@ -166,7 +166,7 @@ function CarouselPrevious({
     <Button
       data-slot="carousel-previous"
       variant={variant}
-      size={null}
+      size={size}
       className={cn("", className)}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
@@ -190,7 +190,7 @@ function CarouselNext({
     <Button
       data-slot="carousel-next"
       variant={variant}
-      size={null}
+      size={size}
       className={cn("", className)}
       disabled={!canScrollNext}
       onClick={scrollNext}

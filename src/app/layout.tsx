@@ -6,6 +6,7 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import CallToAction from "@/components/section/CallToAction";
 import AppMainHead from "@/components/section/AppMainHead";
+import { Toaster } from "react-hot-toast";
 
 const afacad = Afacad({
   variable: "--font-afacad",
@@ -67,6 +68,22 @@ export default function RootLayout({
         <main className="flex-1 flex flex-col pb-brand-spacing gap-y-brand-spacing">
           <>{children}</>
           <CallToAction />
+          <Toaster
+            position="top-center"
+            reverseOrder={false}
+            gutter={8}
+            containerStyle={{}}
+            toastOptions={{
+              // Define default options
+              className: "",
+              duration: 5000,
+              removeDelay: 1000,
+              style: {
+                background: "#363636",
+                color: "#fff",
+              },
+            }}
+          />
         </main>
         <Footer />
       </body>

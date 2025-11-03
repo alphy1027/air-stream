@@ -1,8 +1,7 @@
 import SectionContainer from "@/components/section/SectionContainer";
 import SectionTitle from "@/components/UI-primitives/text/SectionTitle";
 import QuoteIcon from "../icons/QuoteIcon";
-import { reviews } from "@/content/review";
-import TestimonialCard from "../components/TestimonialCard";
+import TestimonialCarousel from "../components/TestimonialCarousel";
 
 export default function TestimonialSection() {
   return (
@@ -16,9 +15,7 @@ export default function TestimonialSection() {
           <QuoteIcon />
         </div>
         <div className="">
-          {reviews.slice(0, 1).map((review) => (
-            <TestimonialCard key={review.name} review={review} />
-          ))}
+          <TestimonialCarousel />
         </div>
       </SectionContainer>
     </div>

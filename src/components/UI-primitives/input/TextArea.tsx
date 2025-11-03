@@ -1,6 +1,7 @@
 import cn from "@/utils/cn";
 import { cva, VariantProps } from "class-variance-authority";
 import { ReactNode, TextareaHTMLAttributes } from "react";
+import ErrorText from "../text/ErrorText";
 
 interface inputProps extends TextareaHTMLAttributes<HTMLTextAreaElement>, VariantProps<typeof textAreaVariants> {
   label?: string;
@@ -35,7 +36,7 @@ const TextArea = ({ className, variant, error, label, rightIcon, leftIcon, ...pr
         className={cn(textAreaVariants({ variant }), leftIcon && "pl-9", rightIcon && "pr-9", className)}
         {...props}
       ></textarea>
-      {error && <span className="text-error text-sm">{error}</span>}
+      {error && <ErrorText>{error}</ErrorText>}
     </div>
   );
 };

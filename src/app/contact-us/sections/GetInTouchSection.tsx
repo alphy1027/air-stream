@@ -7,9 +7,7 @@ import ClockIcon from "../icons/ClockIcon";
 import EmailIcon from "../icons/EmailIcon";
 import LocationIcon from "../icons/LocationIcon";
 import { contact } from "@/content/contact";
-import Input from "@/components/UI-primitives/input/Input";
-import TextArea from "@/components/UI-primitives/input/TextArea";
-import Button from "@/components/UI-primitives/button";
+import ContactForm from "../components/ContactForm";
 
 export default function GetInTouchSection() {
   return (
@@ -35,30 +33,7 @@ export default function GetInTouchSection() {
           <div className="card max-w-[520px] w-full gap-y-brand-spacing-sm">
             <h4 className="text-brand-white">Send Us a Message</h4>
             <Text className="text-neutral">Send us a message and we will get back to you as soon as possible</Text>
-            <form className="card gap-y-brand-spacing-xs">
-              <Input
-                id="fullName"
-                label="Full Name"
-                type="text"
-                placeholder="Full Name"
-                name="fullName"
-                required
-                minLength={3}
-              />
-              <Input id="email" label="Email" type="email" placeholder="Email" name="email" required minLength={3} />
-              <TextArea
-                rows={4}
-                id="message"
-                label="Message"
-                placeholder="Message"
-                name="message"
-                required
-                minLength={3}
-              />
-              <Button type="submit" variant="accent" className="self-end mt-4">
-                Submit
-              </Button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </SectionContainer>

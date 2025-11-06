@@ -1,4 +1,4 @@
-import Button from "@/components/UI-primitives/button";
+import RequestServiceDialog from "@/components/dialog/RequestServiceDialog";
 import LinkButton from "@/components/UI-primitives/button/LinkButton";
 import Text from "@/components/UI-primitives/text/Text";
 
@@ -13,7 +13,7 @@ export default function HeroContent() {
         designed for comfort, efficiency, and lasting performance.
       </Text>
       <div className="flex flex-wrap gap-brand-spacing md:gap-brand-spacing-lg lg:gap-brand-spacing-xl">
-        <Button>Request service</Button>
+        <RequestServiceDialog />
         <LinkButton href="/services" noIcon className="text-brand-white">
           Our Services
         </LinkButton>

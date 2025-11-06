@@ -6,7 +6,7 @@ import { ProductsSectionCarousel } from "../components/ProductsSectionCarousel";
 
 export default function ProductsSection() {
   return (
-    <div className="page-container">
+    <div className="">
       <SectionContainer className="page-container">
         <div className="flex flex-col sm:justify-between gap-brand-spacing-sm sm:flex-row sm:items-end">
           <div className="max-w-[435px] lg:max-w-[640px] page-container">

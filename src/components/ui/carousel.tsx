@@ -4,9 +4,10 @@ import * as React from "react";
 import useEmblaCarousel, { type UseEmblaCarouselType } from "embla-carousel-react";
 
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+/* import { Button } from "@/components/ui/button"; */
 import ArrowRightIcon from "@/app/home/icons/ArrowRightIcon";
 import ArrowLeftIcon from "@/app/home/icons/ArrowLeftIcon";
+import Button from "../UI-primitives/button";
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
@@ -156,8 +157,8 @@ function CarouselItem({ className, ...props }: React.ComponentProps<"div">) {
 
 function CarouselPrevious({
   className,
-  variant = "outline",
-  size = "icon",
+  /* variant = "outline",
+  size = "icon", */
   ...props
 }: React.ComponentProps<typeof Button>) {
   const { scrollPrev, canScrollPrev } = useCarousel();
@@ -165,14 +166,15 @@ function CarouselPrevious({
   return (
     <Button
       data-slot="carousel-previous"
-      variant={variant}
-      size={size}
+      /* variant={variant}
+      size={size} */
+      variant={"transparent"}
       className={cn("", className)}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
+      leftIcon={<ArrowLeftIcon />}
       {...props}
     >
-      <ArrowLeftIcon />
       <span className="sr-only">Previous slide</span>
     </Button>
   );
@@ -180,8 +182,8 @@ function CarouselPrevious({
 
 function CarouselNext({
   className,
-  variant = "outline",
-  size = "icon",
+  /* variant = "outline",
+  size = "icon", */
   ...props
 }: React.ComponentProps<typeof Button>) {
   const { scrollNext, canScrollNext } = useCarousel();
@@ -189,14 +191,15 @@ function CarouselNext({
   return (
     <Button
       data-slot="carousel-next"
-      variant={variant}
-      size={size}
+      /*  variant={variant}
+      size={size} */
+      variant={"transparent"}
       className={cn("", className)}
       disabled={!canScrollNext}
       onClick={scrollNext}
+      rightIcon={<ArrowRightIcon />}
       {...props}
     >
-      <ArrowRightIcon />
       <span className="sr-only">Next slide</span>
     </Button>
   );

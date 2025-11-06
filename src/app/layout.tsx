@@ -62,10 +62,10 @@ export default function RootLayout({
 }>) {
   return (
     <html data-scroll-behavior="smooth" lang="en" className={`${afacad.variable} ${poppins.variable} antialiased `}>
-      <body className="flex relative flex-col font-primary gap-y-brand-spacing-lg">
+      <body className="flex relative flex-col font-primary gap-y-brand-spacing-2xl">
         <AppMainHead />
         <Header />
-        <main className="flex-1 flex flex-col pb-brand-spacing gap-y-brand-spacing">
+        <main className="flex-1 flex flex-col pb-brand-spacing gap-y-brand-spacing-2xl">
           <>{children}</>
           <CallToAction />
           <Toaster

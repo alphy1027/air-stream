@@ -23,7 +23,7 @@ export default function page() {
   return (
     <SectionContainer className="flex flex-col gap-y-brand-spacing-sm">
       <SectionTitle>
-        Delivering Comfort & Efficiency – Our <span className="text-primary">Project Portfolio</span>
+        Delivering Comfort & Efficiency <br /> – Our <span className="text-primary">Project Portfolio</span>
       </SectionTitle>
       <Text className="max-w-[760px]">
         Discover Air stream’s successful installations across residential, commercial, and industrial spaces in Kenya.

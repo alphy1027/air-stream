@@ -1,6 +1,5 @@
 import DisplayCard from "@/components/cards/DisplayCard";
 import SectionContainer from "@/components/section/SectionContainer";
-import Button from "@/components/UI-primitives/button";
 import SectionTitle from "@/components/UI-primitives/text/SectionTitle";
 import Text from "@/components/UI-primitives/text/Text";
 import { services } from "@/content/services";
@@ -11,6 +10,7 @@ import KitchenIcon from "@/app/services/icons/KitchenIcon";
 import RepairIcon from "@/app/services/icons/RepairIcon";
 import VentIcon from "@/app/services/icons/VentIcon";
 import React from "react";
+import ViewServiceButton from "../components/ViewServiceButton";
 
 type IconKey = "airCon" | "fridge" | "kitchen" | "repair" | "vent";
 
@@ -28,11 +28,7 @@ export default function ServicesSection() {
       <SectionTitle>
         <span className="text-primary">Services</span> we provide
       </SectionTitle>
-      <Text className="max-w-[635px] text-center">
-        At Air stream Cooling Systems, we specialize in complete air-conditioning, ventilation, and refrigeration
-        solutions — from supply to installation to maintenance and repairs — ensuring comfort and performance for every
-        space.
-      </Text>
+
       <div className="flex flex-wrap gap-brand-spacing max-w-[900px] justify-center content-start">
         {services.map((service) => {
           const icon = icons[service.icon as keyof typeof icons];
@@ -43,8 +39,13 @@ export default function ServicesSection() {
           );
         })}
         <div className="display-card bg-primary">
-          <h4 className="text-brand-white">View Services</h4>
-          <Button variant="transparent">ok</Button>
+          <h4 className="text-brand-white">View All Services</h4>
+          <Text className="text-neutral opacity-70 font-light">
+            At Air stream Cooling Systems, we specialize in complete air-conditioning, ventilation, and refrigeration
+            solutions — from supply to installation to maintenance and repairs — ensuring comfort and performance for
+            every space.
+          </Text>
+          <ViewServiceButton />
         </div>
       </div>
     </SectionContainer>

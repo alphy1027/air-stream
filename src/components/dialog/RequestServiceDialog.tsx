@@ -23,7 +23,7 @@ export default function RequestServiceDialog() {
       <DialogTrigger asChild>
         <Button>Request service</Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[600px] p-brand-spacing-lg flex flex-col gap-y-brand-spacing">
+      <DialogContent className="sm:max-w-[600px] p-brand-spacing sm:p-brand-spacing-lg flex flex-col gap-y-brand-spacing">
         <DialogHeader>
           <DialogTitle asChild>
             <h3>Request a Service</h3>
@@ -79,13 +79,15 @@ export default function RequestServiceDialog() {
             </FieldSet>
           </FieldGroup>
         </form>
-        <DialogFooter className="flex justify-end items-center gap-brand-spacing">
+        <DialogFooter className="flex justify-end pt-4 items-center sm:gap-brand-spacing">
           <DialogClose asChild>
-            <Button variant="transparent" className="">
+            <Button variant="transparent" className="w-full sm:w-fit">
               Cancel
             </Button>
           </DialogClose>
-          <Button type="submit">Submit</Button>
+          <Button type="submit" className="w-full sm:w-fit">
+            Submit
+          </Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

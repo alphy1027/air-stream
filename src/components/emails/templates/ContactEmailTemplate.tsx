@@ -42,6 +42,7 @@ const paragraph = {
 
 const span = {
   fontWeight: "600",
+  fontSize: "20px",
 };
 
 const btnContainer = {

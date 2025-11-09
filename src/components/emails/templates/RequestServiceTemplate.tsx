@@ -8,17 +8,21 @@ export default function RequestServiceTemplate({ serviceData }: { serviceData: S
     <EmailTemplate>
       <Heading as="h2">Service Request for: {serviceData.service}</Heading>
       <Text>
-        From: <span style={{ fontWeight: "bold" }}>{serviceData.fullName}</span>
+        From: <span style={span}>{serviceData.fullName}</span>
       </Text>
       <Text>
-        Email: <span style={{ fontWeight: "bold" }}>{serviceData.email}</span>
+        Email: <span style={span}>{serviceData.email}</span>
       </Text>
       <Text>
-        Phone: <span style={{ fontWeight: "bold" }}>{serviceData.phone}</span>
+        Phone: <span style={span}>{serviceData.phone}</span>
       </Text>
-      <Text>
-        Message: <span style={{ fontWeight: "bold" }}>{serviceData.message}</span>
-      </Text>
+      <Text>Message:</Text>
+      <Text>{serviceData.message}</Text>
     </EmailTemplate>
   );
 }
+
+const span = {
+  fontWeight: "bold",
+  fontSize: "20px",
+};

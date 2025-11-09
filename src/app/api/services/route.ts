@@ -1,18 +1,18 @@
-import { FormInputs } from "@/app/contact-us/components/ContactForm";
 import { Resend } from "resend";
-import ContactEmailTemplate from "@/components/emails/templates/ContactEmailTemplate";
+import { ServiceRequest } from "@/components/dialog/components/RequestServiceForm";
+import RequestServiceTemplate from "@/components/emails/templates/RequestServiceTemplate";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
-  const formData: FormInputs = await req.json();
+  const serviceData: ServiceRequest = await req.json();
   try {
     const { data, error } = await resend.emails.send({
-      from: "Airstream <onboarding@resend.dev>",
+      from: "Airstream Cooling Systems Ltd <onboarding@resend.dev>",
       to: ["knundahalphones@gmail.com"],
-      subject: "New Contact form submission",
-      replyTo: formData.email,
-      react: ContactEmailTemplate({ formData }),
+      subject: "New Service Request ",
+      replyTo: serviceData.email,
+      react: RequestServiceTemplate({ serviceData }),
     });
 
     if (error) {

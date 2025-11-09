@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
@@ -7,10 +8,15 @@ type BadgeProps = {
 
 const Badge = ({ className }: BadgeProps) => {
   return (
-    <Link href="/" className="p-0.5">
-      <h5 className={twMerge("text-brand-white tracking-wide font-bold", className)}>
-        Air<span className="text-accent">stream</span>
-      </h5>
+    <Link href="/" className={twMerge("relative aspect-[352/98] w-32 px-2", className)}>
+      <Image
+        src="/images/airstream-logo.png"
+        sizes="(max-width:1200px) 128px"
+        alt="Airstream Logo"
+        priority
+        fill
+        className="object-contain"
+      />
     </Link>
   );
 };

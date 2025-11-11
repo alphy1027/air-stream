@@ -34,9 +34,9 @@ export default function ServicesSection() {
             <DisplayCard
               key={service.link}
               icon={icon}
-              href={service.link}
+              href={`/services/${service.link}`}
               title={service.title}
-              className="bg-neutral"
+              className="bg-neutral justify-between"
             >
               {service.intro}
             </DisplayCard>

@@ -10,7 +10,7 @@ const Footer = () => {
       <SectionContainer className="p-2 flex flex-col gap-y-brand-spacing-lg">
         <div className="flex gap-2 flex-col max-w-[570px]">
           <Badge className="text-brand-white" />
-          <Text className="text-neutral">
+          <Text className="text-neutral text-sm font-light">
             Airstream Cooling Systems is a trusted provider of air conditioning, ventilation, and refrigeration
             solutions across Kenya. We combine expert craftsmanship with smart technology to deliver efficient, lasting
             comfort for homes and businesses.
@@ -27,7 +27,7 @@ const Footer = () => {
             </Link>
           ))}
         </nav>
-        <p className="text-foreground-borders text-center">
+        <p className="text-foreground-borders text-center text-sm">
           &copy; {new Date().getFullYear()} Airstream Cooling Systems Ltd. All rights reserved
         </p>
       </SectionContainer>

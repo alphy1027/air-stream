@@ -17,7 +17,7 @@ export default function DisplayCard({ title, href, children, className, icon: Ic
       <Icon />
       <h4 className="">{title}</h4>
       <Text>{children}</Text>
-      {href && <LinkButton noIcon href={href} className="self-end" />}
+      {href && <LinkButton href={href} className="self-end" />}
     </article>
   );
 }

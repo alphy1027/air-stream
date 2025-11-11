@@ -1,8 +1,8 @@
 import React from "react";
 import Badge from "../UI-primitives/text/Badge";
 import Button from "../UI-primitives/button";
-import MenuIcon from "./icons/MenuIcon";
 import Navbar from "./components/Navbar";
+import MobileSidebar from "../sidebar/MobileSidebar";
 
 const Header = () => {
   return (
@@ -13,7 +13,7 @@ const Header = () => {
         <Navbar />
         <Button>Catalogue</Button>
       </div>
-      <Button rightIcon={<MenuIcon />} variant="transparent" className="md:hidden p-1.5 rounded-full" />
+      <MobileSidebar />
     </header>
   );
 };

@@ -21,7 +21,7 @@ export default function MobileSidebar() {
       <SheetTrigger asChild>
         <Button rightIcon={<MenuIcon />} variant="transparent" className="md:hidden p-1.5 rounded-full" />
       </SheetTrigger>
-      <SheetContent side="left" className="p-brand-spacing-sm justify-between gap-y-brand-spacing-xl">
+      <SheetContent side="left" className="p-brand-spacing-sm pt-brand-spacing justify-between gap-y-brand-spacing-xl">
         <SheetHeader className="flex-row items-center justify-between">
           <SheetTitle asChild>
             <Badge />

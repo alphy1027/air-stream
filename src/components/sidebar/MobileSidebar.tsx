@@ -29,7 +29,7 @@ export default function MobileSidebar() {
           <SheetClose asChild>
             <Button
               variant="transparent"
-              className="p-1"
+              className="p-1 translate-x-1"
               rightIcon={<XIcon className="text-foreground-muted w-8 h-8" />}
             />
           </SheetClose>

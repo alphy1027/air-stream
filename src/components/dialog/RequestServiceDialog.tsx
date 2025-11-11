@@ -10,11 +10,11 @@ import Button from "../UI-primitives/button";
 import Text from "../UI-primitives/text/Text";
 import RequestServiceForm from "./components/RequestServiceForm";
 
-export default function RequestServiceDialog() {
+export default function RequestServiceDialog({ defaultService = "" }: { defaultService?: string }) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button>Request service</Button>
+        <Button className={`${!defaultService ? "w-fit" : "w-full"}`}>Request service</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[600px] p-brand-spacing sm:p-brand-spacing-lg flex flex-col gap-y-brand-spacing">
         <DialogHeader>
@@ -25,7 +25,7 @@ export default function RequestServiceDialog() {
             <Text>Fill in your details below and our team will get back to you shortly.</Text>
           </DialogDescription>
         </DialogHeader>
-        <RequestServiceForm />
+        <RequestServiceForm defaultService={defaultService} />
       </DialogContent>
     </Dialog>
   );

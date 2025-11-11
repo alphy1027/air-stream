@@ -27,9 +27,9 @@ const Footer = () => {
             </Link>
           ))}
         </nav>
-        <p className="text-foreground-borders text-center text-sm">
+        <Text className="text-foreground-borders text-center text-sm">
           &copy; {new Date().getFullYear()} Airstream Cooling Systems Ltd. All rights reserved
-        </p>
+        </Text>
       </SectionContainer>
     </footer>
   );

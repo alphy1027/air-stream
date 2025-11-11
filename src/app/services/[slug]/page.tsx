@@ -3,7 +3,9 @@ import { services } from "@/content/services";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import React from "react";
-import ServiceDetails from "../components/ServiceDetails";
+import Text from "@/components/UI-primitives/text/Text";
+import BulletPoint from "../components/BulletPoint";
+import RequestServiceDialog from "@/components/dialog/RequestServiceDialog";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -38,7 +40,16 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   return (
     <SectionContainer>
       <div className="rounded-brand-radius w-full h-[300px] bg-neutral" />
-      <ServiceDetails service={service} />
+      <div className="flex flex-col py-4 justify-center gap-y-brand-spacing-sm lg:w-[400px] max-w-[400px]">
+        <h3 className="lg:w-3/4">{service.title}</h3>
+        <Text>{service.description.message}</Text>
+        <div className="flex flex-col gap-y-2">
+          {service.description.points.map((item, itemId) => (
+            <BulletPoint key={itemId}>{item}</BulletPoint>
+          ))}
+        </div>
+        <RequestServiceDialog defaultService={service.title} />
+      </div>
     </SectionContainer>
   );
 }

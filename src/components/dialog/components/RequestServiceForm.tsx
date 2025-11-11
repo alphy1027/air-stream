@@ -1,3 +1,4 @@
+"use client";
 import ErrorIcon from "@/app/contact-us/icons/ErrorIcon";
 import LoaderIcon from "@/app/home/icons/LoaderIcon";
 import Button from "@/components/UI-primitives/button";
@@ -19,7 +20,7 @@ export interface ServiceRequest {
   message?: string;
 }
 
-export default function RequestServiceForm() {
+export default function RequestServiceForm({ defaultService }: { defaultService: string }) {
   const {
     control,
     reset,
@@ -30,7 +31,7 @@ export default function RequestServiceForm() {
       fullName: "",
       email: "",
       phone: "",
-      service: "",
+      service: defaultService,
       message: "",
     },
   });

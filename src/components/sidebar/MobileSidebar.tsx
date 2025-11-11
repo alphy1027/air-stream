@@ -21,7 +21,7 @@ export default function MobileSidebar() {
       <SheetTrigger asChild>
         <Button rightIcon={<MenuIcon />} variant="transparent" className="md:hidden p-1.5 rounded-full" />
       </SheetTrigger>
-      <SheetContent side="left" className="p-brand-spacing justify-between gap-y-brand-spacing-xl">
+      <SheetContent side="left" className="p-brand-spacing-sm justify-between gap-y-brand-spacing-xl">
         <SheetHeader className="flex-row items-center justify-between">
           <SheetTitle asChild>
             <Badge />
@@ -34,7 +34,7 @@ export default function MobileSidebar() {
             />
           </SheetClose>
         </SheetHeader>
-        <nav className="w-full">
+        <nav className="w-full p-brand-spacing-xs">
           <ul className="divide-y divide-foreground-borders flex flex-col">
             {navLinks.map((navLink) => (
               <li key={navLink.link} className="flex">

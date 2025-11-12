@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { services } from "@/content/services";
+import { RefObject } from "react";
 import { Controller, useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 
@@ -20,7 +21,13 @@ export interface ServiceRequest {
   message?: string;
 }
 
-export default function RequestServiceForm({ defaultService }: { defaultService: string }) {
+export default function RequestServiceForm({
+  defaultService,
+  closeButtonRef,
+}: {
+  defaultService: string;
+  closeButtonRef: RefObject<HTMLButtonElement | null>;
+}) {
   const {
     control,
     reset,
@@ -46,6 +53,7 @@ export default function RequestServiceForm({ defaultService }: { defaultService:
     console.log("response :: ", res);
     if (res.ok) {
       reset();
+      closeButtonRef.current?.click();
       toast.success("Request successfully sent");
     } else {
       toast.error("Something went wrong, please try again");

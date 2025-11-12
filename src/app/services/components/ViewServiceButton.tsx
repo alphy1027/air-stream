@@ -7,7 +7,7 @@ import React from "react";
 export default function ViewServiceButton() {
   const router = useRouter();
   return (
-    <Button onClick={() => router.push("/services")} variant="accent" rightIcon={<ArrowRight />} className="self-end">
+    <Button onClick={() => router.push("/services")} variant="accent" rightIcon={<ArrowRight />} className="">
       View More
     </Button>
   );

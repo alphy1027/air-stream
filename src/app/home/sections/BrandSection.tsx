@@ -2,11 +2,11 @@ import SectionContainer from "@/components/section/SectionContainer";
 import SectionTitle from "@/components/UI-primitives/text/SectionTitle";
 import BrandCard from "../components/BrandCard";
 import LgIcon from "../icons/brand-section/LgIcon";
-import PanasonicIcon from "../icons/brand-section/PanasonicIcon";
 import ToshibaIcon from "../icons/brand-section/ToshibaIcon";
 import SumsangIcon from "../icons/brand-section/SumsangIcon";
-import FujitsuIcon from "../icons/brand-section/FujitsuIcon";
-import BoschIcon from "../icons/brand-section/BoschIcon";
+import MitsubishiIcon from "../icons/brand-section/MitsubishiIcon";
+import CarrierIcon from "../icons/brand-section/CarrierIcon";
+import DaikinIcon from "../icons/brand-section/DaikinIcon";
 
 export default function BrandSection() {
   return (
@@ -18,10 +18,10 @@ export default function BrandSection() {
         </SectionTitle>
         <div className="flex flex-wrap gap-brand-spacing items-center justify-center max-w-[600px] xl:max-w-none">
           <BrandCard icon={LgIcon} />
-          <BrandCard icon={PanasonicIcon} />
+          <BrandCard icon={MitsubishiIcon} />
           <BrandCard icon={ToshibaIcon} />
-          <BrandCard icon={BoschIcon} />
-          <BrandCard icon={FujitsuIcon} />
+          <BrandCard icon={DaikinIcon} />
+          <BrandCard icon={CarrierIcon} />
           <BrandCard icon={SumsangIcon} />
         </div>
       </SectionContainer>

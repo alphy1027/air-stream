@@ -46,16 +46,6 @@ export const products = [
   },
   {
     id: 10,
-    name: "Tea Urn",
-    image: "",
-  },
-  {
-    id: 11,
-    name: "Gas Salamander",
-    image: "",
-  },
-  {
-    id: 12,
     name: "Washing Machine",
     image: "",
   },

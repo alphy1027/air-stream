@@ -21,11 +21,14 @@ export default function Navbar() {
 
   return (
     <NavigationMenu className="" /* viewport={isMobile} */>
-      <NavigationMenuList className="flex-wrap">
+      <NavigationMenuList className="flex-wrap divide-x divide-slate-500">
         {navLinks.map((navLink) =>
           navLink.link === "Services" ? (
-            <NavigationMenuItem key={navLink.link}>
-              <NavigationMenuTrigger>{navLink.link}</NavigationMenuTrigger>
+            <NavigationMenuItem key={navLink.link} className="flex items-center">
+              <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                <Link href={navLink.to}>{navLink.link}</Link>
+              </NavigationMenuLink>
+              <NavigationMenuTrigger className=""></NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-2 sm:w-[400px] md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                   {services.map((service) => (

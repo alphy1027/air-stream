@@ -43,7 +43,7 @@ function NavigationMenuItem({ className, ...props }: React.ComponentProps<typeof
 }
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex rounded-brand-radius text-brand-white gap-2 w-max items-center justify-center px-4 lg:px-brand-spacing py-2.5 text-md font-semibold hover:bg-primary hover:text-brand-white focus:bg-primary focus:text-brand-white disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-primary data-[state=open]:text-brand-white data-[state=open]:focus:bg-primary data-[state=open]:bg-primary focus-visible:ring-ring/50 outline-none transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1"
+  "group inline-flex rounded-brand-radius text-brand-white gap-2 w-fit items-center justify-center px-2.5 lg:px-3 py-2 text-md font-semibold hover:bg-primary hover:text-brand-white focus:bg-primary focus:text-brand-white disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-primary data-[state=open]:text-brand-white data-[state=open]:focus:bg-primary data-[state=open]:bg-primary focus-visible:ring-ring/50 outline-none transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1"
 );
 
 function NavigationMenuTrigger({
@@ -54,12 +54,12 @@ function NavigationMenuTrigger({
   return (
     <NavigationMenuPrimitive.Trigger
       data-slot="navigation-menu-trigger"
-      className={cn(navigationMenuTriggerStyle(), "group", className)}
+      className={cn(navigationMenuTriggerStyle(), "group p-1", className)}
       {...props}
     >
       {children}{" "}
       <ChevronDownIcon
-        className="relative top-[1px] ml-1 size-4 transition duration-300 group-data-[state=open]:rotate-180"
+        className="relative top-[1px] size-4 transition duration-300 group-data-[state=open]:rotate-180"
         aria-hidden="true"
       />
     </NavigationMenuPrimitive.Trigger>

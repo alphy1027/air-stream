@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import GetInTouchSection from "./sections/GetInTouchSection";
-import LocationSection from "./sections/LocationSection";
+import InstantContactSection from "./sections/InstantContactSection";
 
 export const metadata: Metadata = {
   title: "Contact AirStream | HVAC & Refrigeration Services in Kenya",
@@ -20,9 +20,8 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <div className="flex flex-col gap-y-brand-page-spacing">
-      <div className="w-full h-28 bg-neutral"></div>
       <GetInTouchSection />
-      <LocationSection />
+      <InstantContactSection />
     </div>
   );
 }

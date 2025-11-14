@@ -1,8 +1,9 @@
 export const contact = {
   info: {
-    phone1: "+254719536160",
+    phone1: "+254725397521",
     phone2: "+254737323089",
     email: "info@airstreamke.co.ke",
+    email2: "airstreamke@gmail.com",
   },
   location: {
     street: "Ambank House 13th Floor, Suite 14",

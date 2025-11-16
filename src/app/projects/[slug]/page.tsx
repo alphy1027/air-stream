@@ -1,16 +1,16 @@
+import NotFound from "@/app/not-found";
 import ImageGallery from "@/components/gallery/ImageGallery";
 import SectionContainer from "@/components/section/SectionContainer";
 import { projects } from "@/content/projects";
 import { GetImages } from "@/utils/GetImages";
 import Image from "next/image";
-import { notFound } from "next/navigation";
 
 export default async function ProductPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const project = projects.find((project) => project.folder === slug);
 
   if (!project) {
-    return notFound();
+    return NotFound();
   }
 
   return (

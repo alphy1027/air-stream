@@ -26,7 +26,7 @@ export default function ProjectSection() {
           View Projects
         </LinkButton>
       </div>
-      <div className="flex flex-wrap justify-center gap-brand-spacing-sm md:gap-brand-spacing">
+      <div className="grid grid-cols-1 max-w-[500px] md:max-w-full md:grid-cols-2 xl:grid-cols-4 justify-center self-center gap-brand-spacing-sm md:gap-brand-spacing">
         {projects.slice(0, 4).map((project) => (
           <HomeProjectCard key={project.id} project={project} />
         ))}

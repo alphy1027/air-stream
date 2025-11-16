@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex gap-2 flex-col max-w-[570px]">
           <Badge className="text-brand-white" />
           <Text className="text-neutral text-sm font-light">
-            Airstream Cooling Systems is a trusted provider of air conditioning, ventilation, and refrigeration
+            Airstream Cooling Systems Ltd is a trusted provider of air conditioning, ventilation, and refrigeration
             solutions across Kenya. We combine expert craftsmanship with smart technology to deliver efficient, lasting
             comfort for homes and businesses.
           </Text>

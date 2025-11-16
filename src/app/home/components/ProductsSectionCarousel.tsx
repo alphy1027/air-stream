@@ -19,7 +19,7 @@ export function ProductsSectionCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div className="flex items-center gap-brand-spacing-sm self-end pr-8">
+      <div className="flex items-center gap-brand-spacing-sm self-end pr-8 lg:pr-12">
         <CarouselPrevious className="" />
         <CarouselNext className="" />
       </div>

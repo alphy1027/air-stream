@@ -15,7 +15,6 @@ export default function ImageGallery({ images, folder }: { images: string[]; fol
     setActiveImage(index);
     setOpenImage(true);
   };
-  console.log(images);
   return (
     <>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-brand-spacing-sm">
@@ -52,7 +51,7 @@ export default function ImageGallery({ images, folder }: { images: string[]; fol
           </DialogClose>
           <Carousel
             opts={{
-              loop: true,
+              /* loop: true, */
               startIndex: activeImage,
             }}
             className="w-full max-w-[90vw] h-[85vh] relative"

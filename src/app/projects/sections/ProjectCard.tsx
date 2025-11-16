@@ -10,11 +10,11 @@ export default function ProjectCard({ project }: { project: (typeof projects)[0]
   const router = useRouter();
   return (
     <div
-      className={`flex flex-col lg:flex-row gap-y-brand-spacing-xs border border-foreground-borders w-fit rounded-brand-radius ${
+      className={`flex flex-col lg:flex-row gap-y-brand-spacing-xs flex-1 border border-foreground-borders w-fit rounded-brand-radius ${
         project.id % 2 === 0 ? "lg:flex-row-reverse" : ""
       }`}
     >
-      <div className="max-w-[435px] relative lg:w-[350px] lg:h-[420px] h-[380px] lg:rounded-brand-radius rounded-t-brand-radius">
+      <div className="max-w-[435px] relative lg:w-[400px] lg:h-[450px] h-[380px] lg:rounded-brand-radius rounded-t-brand-radius">
         <Image
           src={`/images/${project.folder}/${project.thumbnail}`}
           alt="Airstream HVAC projects across Kenya"

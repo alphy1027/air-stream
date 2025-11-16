@@ -1,4 +1,5 @@
 import ProjectDate from "@/app/projects/components/ProjectDate";
+import LinkButton from "@/components/UI-primitives/button/LinkButton";
 import { projects } from "@/content/projects";
 import Image from "next/image";
 
@@ -17,6 +18,7 @@ export default function HomeProjectCard({ project }: { project: (typeof projects
       <div className="flex-col flex gap-brand-spacing-xs px-brand-spacing-sm">
         <ProjectDate />
         <h6 className="">{project.title}</h6>
+        <LinkButton href={`/projects/${project.folder}`} className="self-end" />
       </div>
     </div>
   );

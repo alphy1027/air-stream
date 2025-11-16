@@ -6,7 +6,6 @@ import React from "react";
 import Text from "@/components/UI-primitives/text/Text";
 import BulletPoint from "../components/BulletPoint";
 import RequestServiceDialog from "@/components/dialog/RequestServiceDialog";
-import ImageGallery from "@/components/gallery/ImageGallery";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -53,8 +52,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <RequestServiceDialog defaultService={service.title} />
         </div>
       </div>
-
-      <ImageGallery />
     </SectionContainer>
   );
 }

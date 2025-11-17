@@ -6,6 +6,7 @@ import React from "react";
 import Text from "@/components/UI-primitives/text/Text";
 import BulletPoint from "../components/BulletPoint";
 import RequestServiceDialog from "@/components/dialog/RequestServiceDialog";
+import Image from "next/image";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -40,7 +41,15 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   return (
     <SectionContainer className="flex flex-col gap-brand-page-spacing">
       <div className="flex flex-col lg:flex-row self-center lg:gap-brand-spacing-2xl gap-brand-spacing-xs">
-        <div className="bg-neutral rounded-brand-radius lg:w-[400px] lg:h-[530px] max-w-[415px] h-[415px]" />
+        <div className="relative lg:w-[400px] lg:h-[530px] max-w-[415px] h-[415px]">
+          <Image
+            src={`/images/${service.thumbnail}`}
+            alt="Airstream HVAC services across Kenya"
+            fill
+            sizes="(min-width: 1024px) 400px, 415px"
+            className="object-cover rounded-brand-radius"
+          />
+        </div>
         <div className="flex flex-col py-4 justify-center gap-y-brand-spacing-sm lg:w-[400px] max-w-[400px]">
           <h3 className="lg:w-3/4">{service.title}</h3>
           <Text>{service.description.message}</Text>

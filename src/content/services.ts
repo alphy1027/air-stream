@@ -4,6 +4,7 @@ export const services = [
     link: "air-conditioning",
     icon: "airCon",
     image: "",
+    thumbnail: "air-con-thumbnail.jpg",
     intro:
       "Efficient design, installation, and maintenance for residential, commercial, and industrial spaces — ensuring consistent comfort and energy savings.",
     description: {
@@ -22,6 +23,7 @@ export const services = [
     link: "refrigeration-works",
     icon: "fridge",
     image: "",
+    thumbnail: "fridge-thumbnail.jpg",
     intro:
       "Specialized refrigeration systems for commercial, industrial, and processing facilities — including cold rooms, chillers, and temperature-controlled environments.",
     description: {
@@ -40,6 +42,7 @@ export const services = [
     link: "mechanical-ventilation",
     icon: "vent",
     image: "",
+    thumbnail: "ventilation-thumbnail.jpg",
     intro:
       "Fresh air systems for healthier indoor environments — covering fume extraction, LEV testing, and heat recovery ventilation.",
     description: {
@@ -57,6 +60,7 @@ export const services = [
     link: "commercial-kitchen-equipment",
     icon: "kitchen",
     image: "",
+    thumbnail: "kitchen-equipment-thumbnail.jpg",
     intro:
       "Professional-grade equipment supply, installation, and maintenance for reliable and efficient kitchen operations.",
     description: {
@@ -70,6 +74,7 @@ export const services = [
     link: "repair-services",
     icon: "repair",
     image: "",
+    thumbnail: "repair-thumbnail.jpg",
     intro:
       "Expert troubleshooting, system redesign, and preventive maintenance to keep your cooling and ventilation systems performing at their best.",
     description: {

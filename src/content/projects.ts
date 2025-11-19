@@ -44,7 +44,7 @@ export const projects = [
     date: "",
     images: [],
   },
-  {
+  /* {
     id: 6,
     image: "",
     thumbnail: "IMG-20251014-WA0099.jpg",
@@ -52,5 +52,5 @@ export const projects = [
     title: "Standard Street",
     date: "15 April 2025",
     images: [],
-  },
+  }, */
 ];

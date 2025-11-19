@@ -71,8 +71,8 @@ export default function ImageGallery({ images, folder }: { images: string[]; fol
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-1 -translate-y-1/2 top-1/2 text-white bg-primary border-none" />
-            <CarouselNext className="absolute right-1 -translate-y-1/2 top-1/2 text-white border-none bg-primary" />
+            <CarouselPrevious className="absolute left-1 -translate-y-1/2 top-1/2 p-2 text-white rounded-full bg-primary border-none" />
+            <CarouselNext className="absolute right-1 -translate-y-1/2 top-1/2 text-white rounded-full p-2 border-none bg-primary" />
           </Carousel>
         </DialogContent>
       </Dialog>

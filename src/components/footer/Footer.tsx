@@ -3,10 +3,18 @@ import Link from "next/link";
 import SectionContainer from "../section/SectionContainer";
 import Badge from "../UI-primitives/text/Badge";
 import Text from "../UI-primitives/text/Text";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary py-4">
+    <footer className="bg-secondary/75 py-4 relative">
+      <Image
+        src="/images/footer-image.jpg"
+        alt="HVAC systems"
+        fill
+        priority
+        className="object-cover object-center footer-img"
+      />
       <SectionContainer className="p-2 flex flex-col gap-y-brand-spacing-lg">
         <div className="flex gap-2 flex-col max-w-[570px]">
           <Badge className="text-brand-white" />

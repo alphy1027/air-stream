@@ -9,11 +9,11 @@ export default function HeroSection() {
     <section className="">
       <div className="relative min-h-[85vh] md:min-h-[85vh] lg:min-h-[90vh] bg-secondary flex flex-col justify-center">
         <Image
-          src="/images/hero.png"
+          src="/images/airstream-hero.jpg"
           alt="HVAC systems"
           fill
           priority
-          className="object-cover object-center hero-img"
+          className="object-fill object-center hero-img"
         />
         <SectionContainer className="flex flex-col py-0 justify-center translate-y-1/2">
           <HeroContent />

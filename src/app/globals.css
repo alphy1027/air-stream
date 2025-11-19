@@ -226,8 +226,15 @@ h6 {
 }
 
 .hero-img {
-  mask-image: linear-gradient(black, transparent);
-  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(rgb(95, 95, 95), transparent);
+  -webkit-mask-image: linear-gradient(rgb(95, 95, 95), transparent);
+}
+
+.footer-img {
+  /* mask-image: linear-gradient(black, transparent);
+  -webkit-mask-image: linear-gradient(black, transparent); */
+  position: relative;
+  z-index: -10;
 }
 
 .dark {

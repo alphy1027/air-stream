@@ -7,7 +7,7 @@ import ScrollButton from "@/components/UI-primitives/button/ScrollButton";
 export default function HeroSection() {
   return (
     <section className="">
-      <div className="relative min-h-[90vh] md:min-h-[90vh] gap-brand-spacing-xs lg:min-h-[90vh] bg-secondary flex flex-col items-end">
+      <div className="relative min-h-[90vh] md:min-h-[90vh] gap-brand-spacing-lg lg:min-h-[90vh] bg-secondary flex flex-col items-end">
         <Image
           src="/images/airstream-hero.jpg"
           alt="Airstream HVAC systems"

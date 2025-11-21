@@ -16,7 +16,7 @@ export default function ScrollButton() {
       aria-label="Scroll down"
       variant="transparent"
       leftIcon={<Mouse />}
-      className=" text-foreground-borders gap-0.5 text-sm flex flex-col self-center"
+      className=" text-slate-600 transform scroll-anime gap-0.5 text-sm flex flex-col self-center"
     >
       Scroll Down
     </Button>

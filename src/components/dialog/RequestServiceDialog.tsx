@@ -18,7 +18,7 @@ export default function RequestServiceDialog({ defaultService = "" }: { defaultS
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className={`${!defaultService ? "w-fit" : "w-full"}`}>Request service</Button>
+        <Button className={`${!defaultService ? "w-full md:w-fit" : "w-full"}`}>Request service</Button>
       </DialogTrigger>
       <DialogContent
         showCloseButton={false}

@@ -1,6 +1,6 @@
-import ArrowDown from "@/app/home/icons/ArrowDown";
 import React from "react";
 import Button from ".";
+import { Mouse } from "lucide-react";
 
 export default function ScrollButton() {
   const handleScroll = () => {
@@ -15,8 +15,10 @@ export default function ScrollButton() {
       onClick={handleScroll}
       aria-label="Scroll down"
       variant="transparent"
-      rightIcon={<ArrowDown />}
-      className="animate animate-bounce absolute left-1/2 -translate-x-1/2 bottom-0"
-    />
+      leftIcon={<Mouse />}
+      className=" text-foreground-borders gap-0.5 text-sm flex flex-col self-center"
+    >
+      Scroll Down
+    </Button>
   );
 }

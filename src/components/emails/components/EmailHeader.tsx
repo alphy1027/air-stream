@@ -1,6 +1,6 @@
 import { Img, Link } from "@react-email/components";
 
-export const baseUrl = process.env.SITE_URL ? `https://${process.env.SITE_URL}` : "";
+export const baseUrl = process.env.SITE_URL ? `${process.env.SITE_URL}` : "localhost:3000";
 
 export default function EmailHeader() {
   return (
@@ -15,8 +15,9 @@ export default function EmailHeader() {
     </Link>
   );
 }
+
 const logo = {
-  margin: "0 auto",
+  margin: "20px auto",
   fontSize: "24px",
   fontWeight: "800",
   width: "fit-content",

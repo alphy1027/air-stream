@@ -15,9 +15,11 @@ export default function HomeProjectCard({ project }: { project: (typeof projects
           className="object-cover rounded-t-brand-radius"
         />
       </div>
-      <div className="flex-col flex gap-brand-spacing-xs px-brand-spacing-sm">
-        <ProjectDate />
-        <h6 className="">{project.title}</h6>
+      <div className="flex-col flex flex-1 justify-between gap-brand-spacing-xs px-brand-spacing-sm">
+        <div className="flex-col flex gap-brand-spacing-xs">
+          <ProjectDate />
+          <h6 className="">{project.title}</h6>
+        </div>
         <LinkButton href={`/projects/${project.folder}`} className="self-end" />
       </div>
     </div>

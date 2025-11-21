@@ -24,7 +24,7 @@ export default function RequestServiceDialog({ defaultService = "" }: { defaultS
         showCloseButton={false}
         className="sm:max-w-[600px] p-brand-spacing sm:p-brand-spacing-lg flex flex-col gap-y-brand-spacing"
       >
-        <DialogHeader className="flex-row justify-between">
+        <DialogHeader className="flex-row items-start justify-between">
           <div className="flex flex-col gap-2">
             <DialogTitle asChild>
               <h3>Request a Service</h3>

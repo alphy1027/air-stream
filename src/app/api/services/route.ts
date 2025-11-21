@@ -1,6 +1,7 @@
 import { Resend } from "resend";
 import { ServiceRequest } from "@/components/dialog/components/RequestServiceForm";
 import RequestServiceTemplate from "@/components/emails/templates/RequestServiceTemplate";
+import { contact } from "@/content/contact";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -8,8 +9,8 @@ export async function POST(req: Request) {
   const serviceData: ServiceRequest = await req.json();
   try {
     const { data, error } = await resend.emails.send({
-      from: "Airstream Cooling Systems Ltd <onboarding@resend.dev>",
-      to: ["knundahalphones@gmail.com"],
+      from: `Airstream Cooling Systems Ltd <${contact.info.email}>`,
+      to: [contact.info.email2],
       subject: "New Service Request ",
       replyTo: serviceData.email,
       react: RequestServiceTemplate({ serviceData }),

@@ -8,7 +8,7 @@ export async function POST(req: Request) {
   const formData: FormInputs = await req.json();
   try {
     const { data, error } = await resend.emails.send({
-      from: "Airstream <onboarding@resend.dev>",
+      from: "Airstream Cooling Systems Ltd <onboarding@resend.dev>",
       to: ["knundahalphones@gmail.com"],
       subject: "New Contact form submission",
       replyTo: formData.email,

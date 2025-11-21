@@ -44,13 +44,11 @@ export default function RequestServiceForm({
   });
 
   const submitServiceForm = async (data: ServiceRequest) => {
-    console.log("App data", data);
     const res = await fetch("/api/services", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     });
-    console.log("response :: ", res);
     if (res.ok) {
       reset();
       closeButtonRef.current?.click();

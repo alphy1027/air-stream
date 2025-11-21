@@ -79,8 +79,10 @@ export default function RootLayout({
               duration: 5000,
               removeDelay: 1000,
               style: {
-                background: "#363636",
-                color: "#fff",
+                background: "#fff",
+                color: "#363636",
+                borderRadius: "4px",
+                boxShadow: "0 4px 12px rgba(0, 0, 0, 0.12)",
               },
             }}
           />

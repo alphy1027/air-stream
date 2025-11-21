@@ -17,7 +17,7 @@ export default function EmailHeader() {
 }
 
 const logo = {
-  margin: "20px auto",
+  margin: "3rem auto",
   fontSize: "24px",
   fontWeight: "800",
   width: "fit-content",

@@ -24,7 +24,7 @@ export default function RequestServiceDialog({ defaultService = "" }: { defaultS
         showCloseButton={false}
         className="sm:max-w-[600px] p-brand-spacing sm:p-brand-spacing-lg flex flex-col gap-y-brand-spacing"
       >
-        <DialogHeader className="items-center flex-row justify-between">
+        <DialogHeader className="flex-row justify-between">
           <div className="flex flex-col gap-2">
             <DialogTitle asChild>
               <h3>Request a Service</h3>
@@ -34,7 +34,7 @@ export default function RequestServiceDialog({ defaultService = "" }: { defaultS
           <DialogClose asChild>
             <button
               ref={closeButtonRef}
-              className="p-1 translate-x-1 bg-transparent hover:scale-105 duration-200 ease-in transition"
+              className="px-1 py-0.5 translate-x-1 bg-transparent hover:scale-105 duration-200 ease-in transition"
             >
               <XIcon className="text-foreground-muted w-8 h-8" />
             </button>

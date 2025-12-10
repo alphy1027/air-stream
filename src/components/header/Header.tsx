@@ -1,8 +1,8 @@
 import React from "react";
 import Badge from "../UI-primitives/text/Badge";
-import Button from "../UI-primitives/button";
 import Navbar from "./components/Navbar";
 import MobileSidebar from "../sidebar/MobileSidebar";
+import CatalogueLink from "@/app/home/components/CatalogueLink";
 
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
 
       <div className="hidden md:flex items-center gap-brand-spacing-xs lg:gap-brand-spacing-sm">
         <Navbar />
-        <Button>Catalogue</Button>
+        <CatalogueLink />
       </div>
       <MobileSidebar />
     </header>

@@ -10,7 +10,7 @@ import ScrollToTop from "@/components/section/ScrollToTop";
 import ProjectSection from "./home/sections/ProjectSection";
 
 export const metadata: Metadata = {
-  title: "Airstream Cooling Systems | HVAC & Refrigeration Solutions in Kenya",
+  title: "Airstream Cooling Systems Ltd | HVAC & Refrigeration Solutions in Kenya",
   description:
     "Airstream provides expert air conditioning, refrigeration, and ventilation services in Kenya. We specialize in installation, repair, maintenance, and supply of genuine spare parts, delivering reliable HVAC solutions for homes, offices, and commercial spaces.",
   alternates: {

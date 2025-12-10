@@ -15,6 +15,7 @@ import { navLinks } from "@/content/navLinks";
 import Link from "next/link";
 import { XIcon } from "lucide-react";
 import Text from "../UI-primitives/text/Text";
+import CatalogueLink from "@/app/home/components/CatalogueLink";
 
 export default function MobileSidebar() {
   return (
@@ -38,7 +39,8 @@ export default function MobileSidebar() {
             />
           </SheetClose>
         </SheetHeader>
-        <nav className="w-full p-brand-spacing-xs">
+
+        <nav className="w-full p-brand-spacing-xs flex flex-col gap-brand-spacing-xs">
           <ul className="divide-y divide-foreground-borders flex flex-col">
             {navLinks.map((navLink) => (
               <li key={navLink.link} className="flex">
@@ -53,6 +55,7 @@ export default function MobileSidebar() {
               </li>
             ))}
           </ul>
+          <CatalogueLink className="mt-4 w-full" />
         </nav>
         <SheetFooter className="">
           <Text className="text-foreground-borders text-center text-sm">

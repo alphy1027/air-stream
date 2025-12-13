@@ -1,9 +1,8 @@
 export const contact = {
   info: {
-    phone1: "+254725397521",
-    phone2: "+254737323089",
-    email: "info@airstreamke.co.ke",
-    email2: "airstreamcoolingsystems@gmail.com",
+    phone1: "+254 725 397 521",
+    phone2: "+254 737 323 089",
+    email: "airstreamcoolingsystems@gmail.com",
   },
   location: {
     street: "Ambank House 13th Floor, Suite 14",

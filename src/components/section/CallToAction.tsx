@@ -1,5 +1,4 @@
 import { contact } from "@/content/contact";
-import Button from "../UI-primitives/button";
 import Text from "../UI-primitives/text/Text";
 import SectionContainer from "./SectionContainer";
 import CtaPhoneIcon from "./icons/CtaPhoneIcon";
@@ -15,9 +14,15 @@ const CallToAction = () => {
           </Text>
         </div>
         <div className="w-full h-full flex justify-end">
-          <Button variant="accent" leftIcon={<CtaPhoneIcon />}>
+          <a
+            href={`tel:${contact.info.phone1}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="py-brand-spacing-sm text-foreground-accent-btn bg-accent text-center px-brand-spacing-lg flex items-center justify-center gap-brand-spacing-xs rounded-brand-radius hover:scale-105 active:scale-95 transition ease-in duration-200 font-semibold "
+          >
+            <CtaPhoneIcon />
             {contact.info.phone1}
-          </Button>
+          </a>
         </div>
       </div>
     </SectionContainer>

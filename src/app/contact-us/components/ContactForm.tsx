@@ -46,6 +46,7 @@ export default function ContactForm() {
         </div>
       )}
       <Input
+        disabled={isSubmitting}
         id="fullName"
         label="Full Name"
         type="text"
@@ -60,6 +61,7 @@ export default function ContactForm() {
         minLength={3}
       />
       <Input
+        disabled={isSubmitting}
         id="email"
         label="Email"
         type="email"
@@ -70,6 +72,7 @@ export default function ContactForm() {
         })}
       />
       <TextArea
+        disabled={isSubmitting}
         rows={4}
         id="message"
         label="Message"
@@ -77,7 +80,7 @@ export default function ContactForm() {
         error={errors.message?.message}
         {...register("message", {
           required: "This field is required",
-          minLength: { message: "Message is too short", value: 10 },
+          minLength: { message: "Message is too short", value: 8 },
         })}
         required
         minLength={3}

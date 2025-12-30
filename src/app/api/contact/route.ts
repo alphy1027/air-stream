@@ -10,7 +10,7 @@ export async function POST(req: Request) {
   try {
     const { data, error } = await resend.emails.send({
       from: `Airstream Cooling Systems Ltd <${contact.info.email}>`,
-      to: [contact.info.email2],
+      to: [contact.info.email],
       subject: "New Contact form submission",
       replyTo: formData.email,
       react: ContactEmailTemplate({ formData }),

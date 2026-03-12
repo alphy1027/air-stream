@@ -3,16 +3,16 @@ import GetInTouchSection from "./sections/GetInTouchSection";
 import InstantContactSection from "./sections/InstantContactSection";
 
 export const metadata: Metadata = {
-  title: "Contact AirStream | HVAC & Refrigeration Services in Kenya",
+  title: "Contact Airstream | HVAC & Refrigeration Services in Kenya",
   description:
-    "Get in touch with AirStream for HVAC and refrigeration installation, repair, maintenance, and spare parts in Kenya. Call or email us today for fast, reliable service.",
+    "Get in touch with Airstream for HVAC and refrigeration installation, repair, maintenance, and spare parts in Kenya. Call or email us today for fast, reliable service.",
   alternates: {
     canonical: "/contact-us",
   },
   openGraph: {
-    title: "Contact AirStream | HVAC & Refrigeration Experts",
+    title: "Contact Airstream | HVAC & Refrigeration Experts",
     description:
-      "Need expert HVAC or refrigeration services? Reach out to AirStream in Kenya for installation, repair, maintenance, and spare parts.",
+      "Need expert HVAC or refrigeration services? Reach out to Airstream in Kenya for installation, repair, maintenance, and spare parts.",
     url: "/contact-us",
   },
 };

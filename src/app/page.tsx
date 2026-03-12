@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Airstream HVAC & Refrigeration Experts in Kenya",
     description:
-      "From installation and repair to maintenance and genuine spare parts, AirStream keeps your spaces cool, efficient, and reliable. Trusted HVAC and refrigeration solutions for homes and businesses in Kenya.",
+      "From installation and repair to maintenance and genuine spare parts, Airstream keeps your spaces cool, efficient, and reliable. Trusted HVAC and refrigeration solutions for homes and businesses in Kenya.",
     url: "/",
   },
 };

@@ -5,16 +5,16 @@ import Text from "@/components/UI-primitives/text/Text";
 import MainProjectSection from "./sections/MainProjectSection";
 
 export const metadata: Metadata = {
-  title: "Projects | AirStream HVAC & Refrigeration in Kenya",
+  title: "Projects | Airstream HVAC & Refrigeration in Kenya",
   description:
-    "See AirStream’s completed HVAC and refrigeration projects across Kenya. From offices to commercial spaces, we deliver efficient, reliable climate control solutions.",
+    "See Airstream’s completed HVAC and refrigeration projects across Kenya. From offices to commercial spaces, we deliver efficient, reliable climate control solutions.",
   alternates: {
     canonical: "/projects",
   },
   openGraph: {
     title: "Our Projects | AirStream HVAC & Refrigeration in Kenya",
     description:
-      "Discover AirStream’s portfolio of HVAC and refrigeration projects across Kenya, showcasing our expertise in installation, repair, and maintenance.",
+      "Discover Airstream’s portfolio of HVAC and refrigeration projects across Kenya, showcasing our expertise in installation, repair, and maintenance.",
     url: "/projects",
   },
 };

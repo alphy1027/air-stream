@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s | Airstream Services",
   },
   description:
-    "Explore AirStream’s HVAC & refrigeration services in Kenya. Installation, repair, maintenance, and spare parts for homes, offices, and businesses.",
+    "Explore Airstream’s HVAC & refrigeration services in Kenya. Installation, repair, maintenance, and spare parts for homes, offices, and businesses.",
   alternates: {
     canonical: "/services",
   },

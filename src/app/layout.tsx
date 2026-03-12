@@ -30,10 +30,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: {
       default: "Airstream cooling systems Kenya",
-      template: "%s | AirStream cooling systems Kenya",
+      template: "%s | Airstream cooling systems Kenya",
     },
     description:
-      "From installation and repair to maintenance and genuine spare parts, AirStream keeps your spaces cool, efficient, and reliable. Trusted HVAC and refrigeration solutions for homes and businesses in Kenya.",
+      "From installation and repair to maintenance and genuine spare parts, Airstream keeps your spaces cool, efficient, and reliable. Trusted HVAC and refrigeration solutions for homes and businesses in Kenya.",
     siteName: siteInfo.siteName,
     images: [
       {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Airstream HVAC & Refrigeration Experts in Kenya",
     description:
-      "From installation and repair to maintenance and genuine spare parts, AirStream keeps your spaces cool, efficient, and reliable. Trusted HVAC and refrigeration solutions for homes and businesses in Kenya.",
+      "From installation and repair to maintenance and genuine spare parts, Airstream keeps your spaces cool, efficient, and reliable. Trusted HVAC and refrigeration solutions for homes and businesses in Kenya.",
     images: [""],
   },
 };

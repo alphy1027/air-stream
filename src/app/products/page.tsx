@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import MainProductsSection from "./sections/MainProductsSection";
 
 export const metadata: Metadata = {
-  title: "HVAC and Refrigeration Products | AirStream HVAC & Refrigeration in Kenya",
+  title: "HVAC and Refrigeration Products | Airstream HVAC & Refrigeration in Kenya",
   description:
     "Explore a wide range of high-quality HVAC, refrigeration, and air conditioning products and spare parts from Airstream Cooling Systems. Supplying reliable, energy-efficient units across Kenya.",
   alternates: {

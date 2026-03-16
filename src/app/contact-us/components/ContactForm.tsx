@@ -28,7 +28,6 @@ export default function ContactForm() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     });
-    console.log("response :: ", res);
     if (res.ok) {
       reset();
       toast.success("Message sent successfully");
@@ -38,7 +37,10 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(submitContactForm)} className="card gap-y-brand-spacing-xs">
+    <form
+      onSubmit={handleSubmit(submitContactForm)}
+      className="card gap-y-brand-spacing-xs"
+    >
       {errors.root?.message && (
         <div className="bg-red-200 p-3 rounded-brand-radius flex items-center gap-brand-spacing-xs">
           <ErrorIcon />
@@ -54,8 +56,14 @@ export default function ContactForm() {
         placeholder="Full Name"
         {...register("fullName", {
           required: "This field is required",
-          minLength: { message: "Name should be atleast 4 characters", value: 4 },
-          maxLength: { message: "Name can not exceed 25 characters", value: 25 },
+          minLength: {
+            message: "Name should be atleast 4 characters",
+            value: 4,
+          },
+          maxLength: {
+            message: "Name can not exceed 25 characters",
+            value: 25,
+          },
         })}
         required
         minLength={3}
@@ -87,7 +95,11 @@ export default function ContactForm() {
       />
       <Button
         disabled={isSubmitting}
-        leftIcon={isSubmitting ? <LoaderIcon className="fill-foreground-accent-btn" /> : null}
+        leftIcon={
+          isSubmitting ? (
+            <LoaderIcon className="fill-foreground-accent-btn" />
+          ) : null
+        }
         type="submit"
         variant="accent"
         className="self-end mt-4"

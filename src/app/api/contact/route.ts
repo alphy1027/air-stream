@@ -17,13 +17,11 @@ export async function POST(req: Request) {
     });
 
     if (error) {
-      console.log("Email Error :: ", error.message);
       return Response.json({ success: false, error }, { status: 500 });
     }
 
     return Response.json({ success: true, data });
   } catch (error) {
-    console.log("Email Error :: ", error);
     return Response.json({ success: false, error }, { status: 500 });
   }
 }

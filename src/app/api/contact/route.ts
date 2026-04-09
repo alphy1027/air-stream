@@ -1,4 +1,4 @@
-import { FormInputs } from "@/app/contact-us/components/ContactForm";
+import { FormInputs } from "@/app/(main)/contact-us/components/ContactForm";
 import { Resend } from "resend";
 import ContactEmailTemplate from "@/components/emails/templates/ContactEmailTemplate";
 import { contact } from "@/content/contact";

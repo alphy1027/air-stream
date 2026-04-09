@@ -1,4 +1,4 @@
-import ProjectDate from "@/app/projects/components/ProjectDate";
+import ProjectDate from "@/app/(main)/projects/components/ProjectDate";
 import LinkButton from "@/components/UI-primitives/button/LinkButton";
 import { projects } from "@/content/projects";
 import Image from "next/image";

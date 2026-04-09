@@ -2,11 +2,11 @@ import DisplayCard from "@/components/cards/DisplayCard";
 import SectionContainer from "@/components/section/SectionContainer";
 import SectionTitle from "@/components/UI-primitives/text/SectionTitle";
 import { services } from "@/content/services";
-import AirConIcon from "@/app/services/icons/AirConIcon";
-import FridgeIcon from "@/app/services/icons/FridgeIcon";
-import KitchenIcon from "@/app/services/icons/KitchenIcon";
-import RepairIcon from "@/app/services/icons/RepairIcon";
-import VentIcon from "@/app/services/icons/VentIcon";
+import AirConIcon from "@/app/(main)/services/icons/AirConIcon";
+import FridgeIcon from "@/app/(main)/services/icons/FridgeIcon";
+import KitchenIcon from "@/app/(main)/services/icons/KitchenIcon";
+import RepairIcon from "@/app/(main)/services/icons/RepairIcon";
+import VentIcon from "@/app/(main)/services/icons/VentIcon";
 import React from "react";
 import MoreServicesCard from "../components/MoreServicesCard";
 

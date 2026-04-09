@@ -5,7 +5,7 @@ import Button from "@/components/UI-primitives/button";
 import { useForm } from "react-hook-form";
 import ErrorText from "@/components/UI-primitives/text/ErrorText";
 import ErrorIcon from "../icons/ErrorIcon";
-import LoaderIcon from "@/app/home/icons/LoaderIcon";
+import LoaderIcon from "@/app/(main)/home/icons/LoaderIcon";
 import toast from "react-hot-toast";
 
 export interface FormInputs {
@@ -37,10 +37,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit(submitContactForm)}
-      className="card gap-y-brand-spacing-xs"
-    >
+    <form onSubmit={handleSubmit(submitContactForm)} className="card gap-y-brand-spacing-xs">
       {errors.root?.message && (
         <div className="bg-red-200 p-3 rounded-brand-radius flex items-center gap-brand-spacing-xs">
           <ErrorIcon />
@@ -95,11 +92,7 @@ export default function ContactForm() {
       />
       <Button
         disabled={isSubmitting}
-        leftIcon={
-          isSubmitting ? (
-            <LoaderIcon className="fill-foreground-accent-btn" />
-          ) : null
-        }
+        leftIcon={isSubmitting ? <LoaderIcon className="fill-foreground-accent-btn" /> : null}
         type="submit"
         variant="accent"
         className="self-end mt-4"

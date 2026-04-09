@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Afacad, Poppins } from "next/font/google";
 import "./globals.css";
 import { siteInfo } from "@/content/siteInfo";
+import WhatsappFixedIcon from "@/components/social/WhatsappFixedIcon";
 
 const afacad = Afacad({
   variable: "--font-afacad",
@@ -57,7 +58,10 @@ export default function RootLayout({
 }>) {
   return (
     <html data-scroll-behavior="smooth" lang="en" className={`${afacad.variable} ${poppins.variable} antialiased `}>
-      <body className="flex relative flex-col font-primary gap-y-brand-spacing-2xl">{children}</body>
+      <body className="flex relative flex-col font-primary gap-y-brand-spacing-2xl">
+        <WhatsappFixedIcon />
+        {children}
+      </body>
     </html>
   );
 }

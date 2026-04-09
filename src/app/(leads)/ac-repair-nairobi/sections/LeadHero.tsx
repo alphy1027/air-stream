@@ -2,8 +2,8 @@ import SectionContainer from "@/components/section/SectionContainer";
 
 export default function LeadHero() {
   return (
-    <div className=" min-h-[75vh] flex flex-col items-center justify-center from-neutral to-background bg-linear-to-t">
-      <SectionContainer className="translate-y-1/4">
+    <div className="min-h-[65vh] md:min-h-[70vh] flex flex-col items-center justify-center from-neutral to-background bg-linear-to-t">
+      <SectionContainer className="translate-y-1/3">
         <div className="flex flex-col gap-brand-spacing-xs max-w-190">
           <h1 className="text-foreground-heading">
             Air Conditioning Repair & Installation in Nairobi -

@@ -1,4 +1,3 @@
-import React from "react";
 import ValuesCards from "./ValuesCards";
 import SectionTitle from "@/components/UI-primitives/text/SectionTitle";
 import SectionContainer from "@/components/section/SectionContainer";
@@ -8,7 +7,7 @@ export default function IdentitySection() {
   return (
     <SectionContainer>
       <div className="lg:flex-row flex flex-col xl:gap-x-brand-spacing-xl gap-y-brand-spacing lg:items-start items-center lg:justify-between">
-        <div className="max-w-[560px] page-container">
+        <div className="max-w-140 page-container">
           <SectionTitle>
             Our <span className="text-primary">Mission</span>, <span className="text-primary">Vision</span> & Core{" "}
             <span className="text-primary">Values</span>

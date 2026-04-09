@@ -15,7 +15,7 @@ import { navLinks } from "@/content/navLinks";
 import Link from "next/link";
 import { XIcon } from "lucide-react";
 import Text from "../UI-primitives/text/Text";
-import CatalogueLink from "@/app/home/components/CatalogueLink";
+import CatalogueLink from "@/app/(main)/home/components/CatalogueLink";
 
 export default function MobileSidebar() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { EmailTemplate } from "./EmailTemplate";
 import { Button, Section, Text } from "@react-email/components";
-import { FormInputs } from "@/app/contact-us/components/ContactForm";
+import { FormInputs } from "@/app/(main)/contact-us/components/ContactForm";
 import { baseUrl } from "../components/EmailHeader";
 
 interface TemplateProps {

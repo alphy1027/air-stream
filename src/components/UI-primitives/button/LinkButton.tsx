@@ -3,7 +3,7 @@
 import Button from ".";
 import { ReactNode } from "react";
 import { useRouter } from "next/navigation";
-import ArrowRightIcon from "@/app/home/icons/ArrowRightIcon";
+import ArrowRightIcon from "@/app/(main)/home/icons/ArrowRightIcon";
 
 type LinkProps = {
   children?: ReactNode;

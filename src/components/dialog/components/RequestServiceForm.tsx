@@ -1,6 +1,6 @@
 "use client";
-import ErrorIcon from "@/app/contact-us/icons/ErrorIcon";
-import LoaderIcon from "@/app/home/icons/LoaderIcon";
+import ErrorIcon from "@/app/(main)/contact-us/icons/ErrorIcon";
+import LoaderIcon from "@/app/(main)/home/icons/LoaderIcon";
 import Button from "@/components/UI-primitives/button";
 import ErrorText from "@/components/UI-primitives/text/ErrorText";
 import { DialogClose } from "@/components/ui/dialog";

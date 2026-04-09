@@ -1,6 +1,6 @@
-import SolutionsIcon from "@/app/about/icons/SolutionsIcon";
-import ThumbsIcon from "@/app/about/icons/ThumbsIcon";
-import TrustIcon from "@/app/about/icons/TrustIcon";
+import SolutionsIcon from "@/app/(main)/about/icons/SolutionsIcon";
+import ThumbsIcon from "@/app/(main)/about/icons/ThumbsIcon";
+import TrustIcon from "@/app/(main)/about/icons/TrustIcon";
 
 export const about = {
   intro:

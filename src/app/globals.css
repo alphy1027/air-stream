@@ -186,7 +186,7 @@
   }
 
   .display-card {
-    @apply flex flex-col gap-brand-spacing-xs p-brand-spacing rounded-brand-radius w-[245px] md:p-brand-spacing-lg;
+    @apply flex flex-col gap-brand-spacing-xs p-brand-spacing rounded-brand-radius w-61.25 md:p-brand-spacing-lg;
   }
 
   .page-container {
@@ -201,7 +201,6 @@
     @apply text-caption-base py-0.5 px-1 cursor-pointer capitalize text-neutral hover:text-brand-white duration-200 transition-all ease-in;
   }
 }
-
 
 html {
   height: 100%;

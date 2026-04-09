@@ -1,6 +1,5 @@
 import SectionContainer from "@/components/section/SectionContainer";
 import SectionTitle from "@/components/UI-primitives/text/SectionTitle";
-import React from "react";
 import AirstreamCard from "../components/AirstreamCard";
 import Text from "@/components/UI-primitives/text/Text";
 import { about } from "@/content/about";
@@ -9,7 +8,7 @@ export default function MainAboutSection() {
   return (
     <SectionContainer>
       <div className="flex flex-col gap-brand-spacing-sm">
-        <div className="w-full h-[350px] bg-neutral rounded-brand-radius" />
+        <div className="w-full h-87.5 bg-neutral rounded-brand-radius" />
         <SectionTitle className="sm:w-1/2">
           We are <span className="text-primary">Airstream</span> Cooling Systems
         </SectionTitle>

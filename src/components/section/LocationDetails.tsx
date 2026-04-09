@@ -4,7 +4,6 @@ import SectionTitle from "../UI-primitives/text/SectionTitle";
 import HomeIcon from "./icons/HomeIcon";
 import Link from "next/link";
 import RightBracket from "./icons/RightBracket";
-import React from "react";
 
 export default function LocationDetails() {
   const location = usePathname();

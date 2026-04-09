@@ -2,7 +2,6 @@ import SectionContainer from "@/components/section/SectionContainer";
 import { services } from "@/content/services";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import React from "react";
 import Text from "@/components/UI-primitives/text/Text";
 import BulletPoint from "../components/BulletPoint";
 import RequestServiceDialog from "@/components/dialog/RequestServiceDialog";

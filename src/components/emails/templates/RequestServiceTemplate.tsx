@@ -1,6 +1,5 @@
 import { ServiceRequest } from "@/components/dialog/components/RequestServiceForm";
 import { Text, Heading, Button } from "@react-email/components";
-import * as React from "react";
 import { EmailTemplate } from "./EmailTemplate";
 
 export default function RequestServiceTemplate({ serviceData }: { serviceData: ServiceRequest }) {

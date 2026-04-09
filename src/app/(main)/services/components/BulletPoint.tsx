@@ -1,5 +1,5 @@
 import Text from "@/components/UI-primitives/text/Text";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import TickIcon from "../icons/TickIcon";
 
 export default function BulletPoint({ children }: { children: ReactNode }) {

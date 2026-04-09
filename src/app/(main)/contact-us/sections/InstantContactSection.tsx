@@ -16,7 +16,7 @@ export default function InstantContactSection() {
         body={contact.info.email}
       />
       <InstantContact
-        href={`https://wa.me/${contact.info.phone1}`}
+        href={`https://wa.me/${contact.info.whatsapp}`}
         title="Whatsapp Us"
         icon={<WhatsappIcon />}
         body={contact.info.phone1}

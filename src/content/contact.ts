@@ -1,6 +1,7 @@
 export const contact = {
   info: {
     phone1: "+254 725 397 521",
+    whatsapp: "254725397521",
     phone2: "+254 737 323 089",
     email: "airstreamcoolingsystems@gmail.com",
   },

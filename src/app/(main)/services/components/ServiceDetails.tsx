@@ -1,6 +1,5 @@
 "use client";
 import ProjectRightArrowIcon from "@/app/(main)/projects/icons/ProjectRightArrowIcon";
-import React from "react";
 import BulletPoint from "./BulletPoint";
 import Text from "@/components/UI-primitives/text/Text";
 import Button from "@/components/UI-primitives/button";

@@ -1,4 +1,3 @@
-import React from "react";
 import ServiceMainCard from "../components/ServiceMainCard";
 import { services } from "@/content/services";
 

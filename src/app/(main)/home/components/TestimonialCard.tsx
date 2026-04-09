@@ -1,10 +1,9 @@
 import Text from "@/components/UI-primitives/text/Text";
 import { reviews } from "@/content/review";
-import React from "react";
 
 export default function TestimonialCard({ review }: { review: (typeof reviews)[0] }) {
   return (
-    <div key={review.name} className="flex flex-col w-full gap-y-brand-spacing-sm max-w-[700px]">
+    <div key={review.name} className="flex flex-col w-full gap-y-brand-spacing-sm max-w-175">
       <Text className="text-body-lg italic">{review.message}</Text>
       <div className="flex items-center">
         <div className="flex flex-col">

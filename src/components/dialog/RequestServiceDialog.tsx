@@ -18,11 +18,11 @@ export default function RequestServiceDialog({ defaultService = "" }: { defaultS
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className={`${!defaultService ? "w-full md:w-fit" : "w-full"}`}>Request service</Button>
+        <Button className={`${!defaultService ? "w-full sm:w-fit" : "w-full"}`}>Request service</Button>
       </DialogTrigger>
       <DialogContent
         showCloseButton={false}
-        className="sm:max-w-[600px] p-brand-spacing sm:p-brand-spacing-lg flex flex-col gap-y-brand-spacing"
+        className="sm:max-w-150 p-brand-spacing sm:p-brand-spacing-lg flex flex-col gap-y-brand-spacing"
       >
         <DialogHeader className="flex-row items-start justify-between">
           <div className="flex flex-col gap-2">

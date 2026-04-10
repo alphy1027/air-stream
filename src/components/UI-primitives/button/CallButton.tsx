@@ -13,7 +13,7 @@ export default function CallButton({ phone, className }: { phone: string; classN
       )}
     >
       <CtaPhoneIcon />
-      {phone}
+      Call Us Now
     </a>
   );
 }

@@ -7,7 +7,7 @@ export default function NotFound() {
     <SectionContainer className="pb-24">
       <h2 className="text-red-600 font-bold">404</h2>
       <h3 className="font-semibold pb-2">Page Not Found</h3>
-      <Link className="flex items-center text-primary gap-2 underline" href="/">
+      <Link className="flex items-center w-fit text-primary gap-2 underline" href="/">
         <ArrowLeft />
         Homepage{" "}
       </Link>
